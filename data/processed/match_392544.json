@@ -1,0 +1,863 @@
+{
+  "metadata": {
+    "game_number": "2627DHB3LERWA0602",
+    "date": "17.10.2026, Spielbeginn 18:00",
+    "venue": "REALSCHULE JöLLENBECK",
+    "home_team": "TUS 97 BIELEFELD/JÖLLENBECK",
+    "away_team": "SV FORTUNA 50 NEUBRANDENBURG",
+    "final_score": "",
+    "spectators": 230
+  },
+  "home_kader": [
+    {
+      "Nr": "5",
+      "Name": "Patricia Lazarevic",
+      "Tore": "1",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": "54:17"
+    },
+    {
+      "Nr": "8",
+      "Name": "Franziska Rolf",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "10",
+      "Name": "Jana Brennecke",
+      "Tore": "3",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "11",
+      "Name": "Melina Gerdes",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "12",
+      "Name": "Lana von der Wiede",
+      "Tore": "2",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "17",
+      "Name": "Paulina Horstkötter",
+      "Tore": "4",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "19",
+      "Name": "Jette Knabbe",
+      "Tore": "6",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": "04:02"
+    },
+    {
+      "Nr": "20",
+      "Name": "Emma Pfennig",
+      "Tore": "7",
+      "7m_Tore": "1/1",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "21",
+      "Name": "Alina-Sophie von Mutius",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "22",
+      "Name": "Saskia Winter",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": "48:32"
+    },
+    {
+      "Nr": "24",
+      "Name": "Tina Stanojevic",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "27",
+      "Name": "Fabienne Thiele",
+      "Tore": "1",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "37",
+      "Name": "Katharina Riepe",
+      "Tore": "2",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "99",
+      "Name": "Klara Sousek",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "A",
+      "Name": "Pascal Welge - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "B",
+      "Name": "Dirk Heidemann - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "C",
+      "Name": "Heiko Voß - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "D",
+      "Name": "Inga De Corte - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    }
+  ],
+  "away_kader": [
+    {
+      "Nr": "4",
+      "Name": "Jolene Preussler",
+      "Tore": "3",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "6",
+      "Name": "Vivien Haasmann",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "8",
+      "Name": "Svea Schalk",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "9",
+      "Name": "Fine Stenzel",
+      "Tore": "6",
+      "7m_Tore": "2/2",
+      "Verwarnung": "",
+      "Hinausstellungen": "22:20"
+    },
+    {
+      "Nr": "10",
+      "Name": "Nele Stenzel",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "13",
+      "Name": "Anika Mensing",
+      "Tore": "2",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "15",
+      "Name": "Helena Philipp",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "17",
+      "Name": "Medea Chokheli",
+      "Tore": "7",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "18",
+      "Name": "Madlen Kloska",
+      "Tore": "5",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "33",
+      "Name": "Johanna Krause",
+      "Tore": "1",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "75",
+      "Name": "Jet Abrahams",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "76",
+      "Name": "Emma Skierke",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "99",
+      "Name": "Marie Weber",
+      "Tore": "1",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "A",
+      "Name": "Manuela Stenzel - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "B",
+      "Name": "Kay Butzlaff - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": "22:45"
+    },
+    {
+      "Nr": "C",
+      "Name": "Ole Evert - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    }
+  ],
+  "events": [
+    {
+      "Zeit": "02:11",
+      "Team": "Gast",
+      "Stand": "0:1",
+      "Ereignis": "Tor",
+      "Person": "18 Madlen Kloska"
+    },
+    {
+      "Zeit": "02:23",
+      "Team": "Heim",
+      "Stand": "1:1",
+      "Ereignis": "Tor",
+      "Person": "Brennecke"
+    },
+    {
+      "Zeit": "02:52",
+      "Team": "Gast",
+      "Stand": "1:2",
+      "Ereignis": "Tor",
+      "Person": "18 Madlen Kloska"
+    },
+    {
+      "Zeit": "04:02",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Verwarnung",
+      "Person": "19 Jette Knabbe"
+    },
+    {
+      "Zeit": "04:46",
+      "Team": "Heim",
+      "Stand": "2:2",
+      "Ereignis": "Tor",
+      "Person": "Riepe"
+    },
+    {
+      "Zeit": "05:52",
+      "Team": "Heim",
+      "Stand": "3:2",
+      "Ereignis": "Tor",
+      "Person": "Wiede"
+    },
+    {
+      "Zeit": "06:21",
+      "Team": "Gast",
+      "Stand": "3:3",
+      "Ereignis": "Tor",
+      "Person": "62 Elisa Schmidt"
+    },
+    {
+      "Zeit": "08:33",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Verwarnung",
+      "Person": "62 Elisa Schmidt"
+    },
+    {
+      "Zeit": "09:37",
+      "Team": "Heim",
+      "Stand": "4:3",
+      "Ereignis": "Tor",
+      "Person": "Horstkötter"
+    },
+    {
+      "Zeit": "11:17",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "8 Franziska Rolf"
+    },
+    {
+      "Zeit": "12:39",
+      "Team": "Heim",
+      "Stand": "5:3",
+      "Ereignis": "Tor",
+      "Person": "19 Jette Knabbe"
+    },
+    {
+      "Zeit": "13:44",
+      "Team": "Heim",
+      "Stand": "6:3",
+      "Ereignis": "Tor",
+      "Person": "Horstkötter"
+    },
+    {
+      "Zeit": "14:26",
+      "Team": "Gast",
+      "Stand": "6:4",
+      "Ereignis": "Tor",
+      "Person": "62 Elisa Schmidt"
+    },
+    {
+      "Zeit": "15:02",
+      "Team": "Gast",
+      "Stand": "6:5",
+      "Ereignis": "Tor",
+      "Person": "9 Fine Stenzel"
+    },
+    {
+      "Zeit": "16:07",
+      "Team": "Gast",
+      "Stand": "6:6",
+      "Ereignis": "Tor",
+      "Person": "Chokheli"
+    },
+    {
+      "Zeit": "16:43",
+      "Team": "Gast",
+      "Stand": "6:7",
+      "Ereignis": "Tor",
+      "Person": "62 Elisa Schmidt"
+    },
+    {
+      "Zeit": "17:20",
+      "Team": "Heim",
+      "Stand": "7:7",
+      "Ereignis": "Tor",
+      "Person": "Brennecke"
+    },
+    {
+      "Zeit": "17:41",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "81 Klara Keilholtz"
+    },
+    {
+      "Zeit": "17:45",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "8 Franziska Rolf"
+    },
+    {
+      "Zeit": "18:00",
+      "Team": "",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "H"
+    },
+    {
+      "Zeit": "18:00",
+      "Team": "",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "H"
+    },
+    {
+      "Zeit": "18:35",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "18 Madlen Kloska"
+    },
+    {
+      "Zeit": "18:43",
+      "Team": "Heim",
+      "Stand": "8:7",
+      "Ereignis": "Tor",
+      "Person": "Riepe"
+    },
+    {
+      "Zeit": "19:33",
+      "Team": "Gast",
+      "Stand": "8:8",
+      "Ereignis": "Tor",
+      "Person": "Mensing"
+    },
+    {
+      "Zeit": "22:07",
+      "Team": "Heim",
+      "Stand": "9:8",
+      "Ereignis": "Tor",
+      "Person": "Pfennig"
+    },
+    {
+      "Zeit": "22:20",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "9 Fine Stenzel"
+    },
+    {
+      "Zeit": "22:45",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Verwarnung",
+      "Person": "0 Kay Butzlaff"
+    },
+    {
+      "Zeit": "24:31",
+      "Team": "Gast",
+      "Stand": "9:9",
+      "Ereignis": "Tor",
+      "Person": "Chokheli"
+    },
+    {
+      "Zeit": "25:15",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Auszeit",
+      "Person": ""
+    },
+    {
+      "Zeit": "25:50",
+      "Team": "Heim",
+      "Stand": "10:9",
+      "Ereignis": "Tor",
+      "Person": "19 Jette Knabbe"
+    },
+    {
+      "Zeit": "26:30",
+      "Team": "",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "(11-12), Sieger SV FORTUNA 50"
+    },
+    {
+      "Zeit": "26:30",
+      "Team": "",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "(11-12), Sieger SV FORTUNA 50"
+    },
+    {
+      "Zeit": "26:31",
+      "Team": "Gast",
+      "Stand": "10:10",
+      "Ereignis": "Tor",
+      "Person": "Preussler"
+    },
+    {
+      "Zeit": "28:04",
+      "Team": "Gast",
+      "Stand": "10:11",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "9 Fine Stenzel"
+    },
+    {
+      "Zeit": "28:32",
+      "Team": "Heim",
+      "Stand": "11:11",
+      "Ereignis": "Tor",
+      "Person": "Pfennig"
+    },
+    {
+      "Zeit": "29:07",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Auszeit",
+      "Person": "13 Anika"
+    },
+    {
+      "Zeit": "29:48",
+      "Team": "Gast",
+      "Stand": "11:12",
+      "Ereignis": "Tor",
+      "Person": "Mensing"
+    },
+    {
+      "Zeit": "30:00",
+      "Team": "",
+      "Stand": "",
+      "Ereignis": "Teilende",
+      "Person": ""
+    },
+    {
+      "Zeit": "31:02",
+      "Team": "Gast",
+      "Stand": "11:13",
+      "Ereignis": "Tor",
+      "Person": "Chokheli"
+    },
+    {
+      "Zeit": "31:09",
+      "Team": "Heim",
+      "Stand": "12:13",
+      "Ereignis": "Tor",
+      "Person": "Pfennig"
+    },
+    {
+      "Zeit": "31:41",
+      "Team": "Gast",
+      "Stand": "12:14",
+      "Ereignis": "Tor",
+      "Person": "Chokheli"
+    },
+    {
+      "Zeit": "32:35",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Fehlwurf Wiede"
+    },
+    {
+      "Zeit": "34:44",
+      "Team": "Heim",
+      "Stand": "13:14",
+      "Ereignis": "Tor",
+      "Person": "19 Jette Knabbe"
+    },
+    {
+      "Zeit": "34:51",
+      "Team": "Gast",
+      "Stand": "13:15",
+      "Ereignis": "Tor",
+      "Person": "Chokheli"
+    },
+    {
+      "Zeit": "35:22",
+      "Team": "Gast",
+      "Stand": "13:16",
+      "Ereignis": "Tor",
+      "Person": "Chokheli"
+    },
+    {
+      "Zeit": "36:29",
+      "Team": "Heim",
+      "Stand": "14:16",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "Pfennig"
+    },
+    {
+      "Zeit": "37:17",
+      "Team": "Heim",
+      "Stand": "15:16",
+      "Ereignis": "Tor",
+      "Person": "Pfennig"
+    },
+    {
+      "Zeit": "37:59",
+      "Team": "Heim",
+      "Stand": "16:16",
+      "Ereignis": "Tor",
+      "Person": "Brennecke"
+    },
+    {
+      "Zeit": "38:33",
+      "Team": "Gast",
+      "Stand": "16:17",
+      "Ereignis": "Tor",
+      "Person": "Kloska"
+    },
+    {
+      "Zeit": "38:58",
+      "Team": "Heim",
+      "Stand": "17:17",
+      "Ereignis": "Tor",
+      "Person": "Horstkötter"
+    },
+    {
+      "Zeit": "40:57",
+      "Team": "Gast",
+      "Stand": "17:18",
+      "Ereignis": "Tor",
+      "Person": "Chokheli"
+    },
+    {
+      "Zeit": "41:34",
+      "Team": "Heim",
+      "Stand": "18:18",
+      "Ereignis": "Tor",
+      "Person": "Thiele"
+    },
+    {
+      "Zeit": "41:41",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Auszeit",
+      "Person": ""
+    },
+    {
+      "Zeit": "42:21",
+      "Team": "Gast",
+      "Stand": "18:19",
+      "Ereignis": "Tor",
+      "Person": "9 Fine Stenzel"
+    },
+    {
+      "Zeit": "42:31",
+      "Team": "Heim",
+      "Stand": "19:19",
+      "Ereignis": "Tor",
+      "Person": "19 Jette Knabbe"
+    },
+    {
+      "Zeit": "43:00",
+      "Team": "Gast",
+      "Stand": "19:20",
+      "Ereignis": "Tor",
+      "Person": "Kloska"
+    },
+    {
+      "Zeit": "43:09",
+      "Team": "Heim",
+      "Stand": "20:20",
+      "Ereignis": "Tor",
+      "Person": "19 Jette Knabbe"
+    },
+    {
+      "Zeit": "43:53",
+      "Team": "Gast",
+      "Stand": "20:21",
+      "Ereignis": "Tor",
+      "Person": "9 Fine Stenzel"
+    },
+    {
+      "Zeit": "44:01",
+      "Team": "Heim",
+      "Stand": "21:21",
+      "Ereignis": "Tor",
+      "Person": "Pfennig"
+    },
+    {
+      "Zeit": "47:15",
+      "Team": "Gast",
+      "Stand": "21:22",
+      "Ereignis": "Tor",
+      "Person": "9 Fine Stenzel"
+    },
+    {
+      "Zeit": "48:32",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "Winter"
+    },
+    {
+      "Zeit": "49:17",
+      "Team": "Gast",
+      "Stand": "21:23",
+      "Ereignis": "Tor",
+      "Person": "Keilholtz"
+    },
+    {
+      "Zeit": "50:07",
+      "Team": "Gast",
+      "Stand": "21:24",
+      "Ereignis": "Tor",
+      "Person": "Krause"
+    },
+    {
+      "Zeit": "50:25",
+      "Team": "Heim",
+      "Stand": "22:24",
+      "Ereignis": "Tor",
+      "Person": "Pfennig"
+    },
+    {
+      "Zeit": "50:34",
+      "Team": "Gast",
+      "Stand": "22:25",
+      "Ereignis": "Tor",
+      "Person": "Preussler"
+    },
+    {
+      "Zeit": "51:07",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Auszeit",
+      "Person": "62 Elisa"
+    },
+    {
+      "Zeit": "51:56",
+      "Team": "Gast",
+      "Stand": "22:26",
+      "Ereignis": "Tor",
+      "Person": "Schmidt"
+    },
+    {
+      "Zeit": "52:24",
+      "Team": "Heim",
+      "Stand": "23:26",
+      "Ereignis": "Tor",
+      "Person": "Horstkötter"
+    },
+    {
+      "Zeit": "53:03",
+      "Team": "Heim",
+      "Stand": "24:26",
+      "Ereignis": "Tor",
+      "Person": "Lazarevic"
+    },
+    {
+      "Zeit": "54:17",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "Lazarevic"
+    },
+    {
+      "Zeit": "54:24",
+      "Team": "Gast",
+      "Stand": "24:27",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "9 Fine Stenzel"
+    },
+    {
+      "Zeit": "54:54",
+      "Team": "Heim",
+      "Stand": "25:27",
+      "Ereignis": "Tor",
+      "Person": "Wiede"
+    },
+    {
+      "Zeit": "55:37",
+      "Team": "Gast",
+      "Stand": "25:28",
+      "Ereignis": "Tor",
+      "Person": "99 Marie Weber"
+    },
+    {
+      "Zeit": "56:04",
+      "Team": "Gast",
+      "Stand": "25:29",
+      "Ereignis": "Tor",
+      "Person": "Preussler"
+    },
+    {
+      "Zeit": "56:13",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Auszeit",
+      "Person": "18 Madlen"
+    },
+    {
+      "Zeit": "57:47",
+      "Team": "Gast",
+      "Stand": "25:30",
+      "Ereignis": "Tor",
+      "Person": "Kloska"
+    },
+    {
+      "Zeit": "57:59",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "Schmidt"
+    },
+    {
+      "Zeit": "58:08",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Fehlwurf Brennecke"
+    },
+    {
+      "Zeit": "59:27",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "Keilholtz"
+    },
+    {
+      "Zeit": "59:56",
+      "Team": "Heim",
+      "Stand": "26:30",
+      "Ereignis": "Tor",
+      "Person": "19 Jette Knabbe"
+    },
+    {
+      "Zeit": "60:00",
+      "Team": "",
+      "Stand": "",
+      "Ereignis": "Teilende",
+      "Person": ""
+    },
+    {
+      "Zeit": "60:00",
+      "Team": "",
+      "Stand": "",
+      "Ereignis": "Spielende",
+      "Person": "6 2 7 D H B 3 L E R W A 0 6 0 2 - 1 7 1 0 2 0 2 6 - 2 3 5 1 2 6"
+    }
+  ]
+}

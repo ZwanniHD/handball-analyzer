@@ -1,0 +1,280 @@
+{
+  "metadata": {
+    "game_number": "2627DHB3LERWA0605",
+    "date": "18.10.2026, Spielbeginn 15:00",
+    "venue": "HANNOVER, SZ BADENSTEDT",
+    "home_team": "TV HANNOVER-BADENSTEDT",
+    "away_team": "HSG EIDER HARDE",
+    "final_score": ": ()",
+    "spectators": 0
+  },
+  "home_kader": [
+    {
+      "Nr": "2",
+      "Name": "Ann-Cathrin Dietrich",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "7",
+      "Name": "Lena Seehausen",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "8",
+      "Name": "Marlen Wills",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "10",
+      "Name": "Nele Kurok",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "14",
+      "Name": "Anna Rudolf",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "18",
+      "Name": "Leni Köwing",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "33",
+      "Name": "Lia Marie Oppermann",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "39",
+      "Name": "Monja Nagel",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "41",
+      "Name": "Jule-Marie Jördens",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "70",
+      "Name": "Anastasia Zimmermann",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "82",
+      "Name": "Nelli Scharf",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "83",
+      "Name": "Lotta Willuhn",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "A",
+      "Name": "Maximilian Lübbersmeyer - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "B",
+      "Name": "Jonas Lukowski - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    }
+  ],
+  "away_kader": [
+    {
+      "Nr": "1",
+      "Name": "Dana Marie Oje",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "2",
+      "Name": "Fine Petersen",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "4",
+      "Name": "Ellis Meg Bruhn",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "5",
+      "Name": "Fina Walluks",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "7",
+      "Name": "Hanne Schildhauer",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "8",
+      "Name": "Sarah Theede",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "9",
+      "Name": "Carina Wulff",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "10",
+      "Name": "Marla Fee Göttsch",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "12",
+      "Name": "Gesine Ohm",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "13",
+      "Name": "Lena Hewig",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "14",
+      "Name": "Frederike Hagge",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "17",
+      "Name": "Mia Sachse",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "20",
+      "Name": "Maja Zwanziger",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "24",
+      "Name": "Margit Rohwer",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "25",
+      "Name": "Lena Ostermann",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "28",
+      "Name": "Nadine Mentzer",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "A",
+      "Name": "Finn Geske - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "B",
+      "Name": "Christian Hungerecker - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "C",
+      "Name": "Julia Jasmin Heide - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,851 @@
+{
+  "metadata": {
+    "game_number": "2627DHB3LERWA0406",
+    "date": "03.10.2026, Spielbeginn 19:15",
+    "venue": "WERNER KUHRT HALLE",
+    "home_team": "HSG EIDER HARDE",
+    "away_team": "SV GRÜN WEISS SCHWERIN",
+    "final_score": "30:29 (14-15), Sieger HSG EIDER HARDE",
+    "spectators": 306
+  },
+  "home_kader": [
+    {
+      "Nr": "1",
+      "Name": "Dana Marie Oje",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "2",
+      "Name": "Fine Petersen",
+      "Tore": "2",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "4",
+      "Name": "Ellis Meg Bruhn",
+      "Tore": "6",
+      "7m_Tore": "3/3",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "5",
+      "Name": "Fina Walluks",
+      "Tore": "6",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "7",
+      "Name": "Hanne Schildhauer",
+      "Tore": "1",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "8",
+      "Name": "Sarah Theede",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "9",
+      "Name": "Carina Wulff",
+      "Tore": "5",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "10",
+      "Name": "Marla Fee Göttsch",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "11",
+      "Name": "Leonie Raup",
+      "Tore": "1",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "12",
+      "Name": "Gesine Ohm",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "13",
+      "Name": "Lena Hewig",
+      "Tore": "2",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "14",
+      "Name": "Frederike Hagge",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "17",
+      "Name": "Mia Sachse",
+      "Tore": "4",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "24",
+      "Name": "Margit Rohwer",
+      "Tore": "1",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": "01:45"
+    },
+    {
+      "Nr": "28",
+      "Name": "Nadine Mentzer",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "A",
+      "Name": "Finn Geske - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "B",
+      "Name": "Christian Hungerecker - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": "46:04"
+    },
+    {
+      "Nr": "C",
+      "Name": "Julia Jasmin Heide - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "D",
+      "Name": "Mehmet Ali Ataman - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    }
+  ],
+  "away_kader": [
+    {
+      "Nr": "4",
+      "Name": "Anna Sophie Schulz",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "7",
+      "Name": "Lucia Dreßler",
+      "Tore": "2",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "8",
+      "Name": "Tamina Kugler",
+      "Tore": "4",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": "21:50"
+    },
+    {
+      "Nr": "11",
+      "Name": "Lisann Pannwitt",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "21",
+      "Name": "Patricia Radloff",
+      "Tore": "2",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "26",
+      "Name": "Jette Lojewski",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "33",
+      "Name": "Josefine Jakobsen",
+      "Tore": "2",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "46",
+      "Name": "Rebecca Rappitsch",
+      "Tore": "2",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "66",
+      "Name": "Julia Kretschmer",
+      "Tore": "5",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "71",
+      "Name": "Alexandra Ivanytsia",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "77",
+      "Name": "Hedi Wigger",
+      "Tore": "1",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": "16:34"
+    },
+    {
+      "Nr": "78",
+      "Name": "Stine Nowacki",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "91",
+      "Name": "Zoe Lorisch",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "A",
+      "Name": "Kim Dehling - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "B",
+      "Name": "Johannes Prothmann - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": "49:20"
+    },
+    {
+      "Nr": "C",
+      "Name": "Andy Schiemann - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "D",
+      "Name": "Menc Sandy Exner - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    }
+  ],
+  "events": [
+    {
+      "Zeit": "01:38",
+      "Team": "Heim",
+      "Stand": "1:0",
+      "Ereignis": "Tor",
+      "Person": "24 Margit Rohwer"
+    },
+    {
+      "Zeit": "01:45",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "24 Margit Rohwer"
+    },
+    {
+      "Zeit": "02:19",
+      "Team": "Gast",
+      "Stand": "1:1",
+      "Ereignis": "Tor",
+      "Person": "8 Tamina Kugler"
+    },
+    {
+      "Zeit": "04:17",
+      "Team": "Heim",
+      "Stand": "2:1",
+      "Ereignis": "Tor",
+      "Person": "Schildhauer"
+    },
+    {
+      "Zeit": "05:16",
+      "Team": "Gast",
+      "Stand": "2:2",
+      "Ereignis": "Tor",
+      "Person": "25 Olivia Schwarz"
+    },
+    {
+      "Zeit": "06:04",
+      "Team": "Heim",
+      "Stand": "3:2",
+      "Ereignis": "Tor",
+      "Person": "5 Fina Walluks"
+    },
+    {
+      "Zeit": "06:46",
+      "Team": "Heim",
+      "Stand": "4:2",
+      "Ereignis": "Tor",
+      "Person": "Zwanziger"
+    },
+    {
+      "Zeit": "06:51",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Auszeit",
+      "Person": ""
+    },
+    {
+      "Zeit": "08:02",
+      "Team": "Gast",
+      "Stand": "4:3",
+      "Ereignis": "Tor",
+      "Person": "25 Olivia Schwarz"
+    },
+    {
+      "Zeit": "08:25",
+      "Team": "Heim",
+      "Stand": "5:3",
+      "Ereignis": "Tor",
+      "Person": "4 Ellis Meg Bruhn"
+    },
+    {
+      "Zeit": "09:04",
+      "Team": "Heim",
+      "Stand": "6:3",
+      "Ereignis": "Tor",
+      "Person": "9 Carina Wulff"
+    },
+    {
+      "Zeit": "10:08",
+      "Team": "Gast",
+      "Stand": "6:4",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "25 Olivia Schwarz"
+    },
+    {
+      "Zeit": "10:30",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Verwarnung",
+      "Person": "25 Olivia Schwarz"
+    },
+    {
+      "Zeit": "11:06",
+      "Team": "Heim",
+      "Stand": "7:4",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "4 Ellis Meg Bruhn"
+    },
+    {
+      "Zeit": "11:52",
+      "Team": "Gast",
+      "Stand": "7:5",
+      "Ereignis": "Tor",
+      "Person": "Rappitsch"
+    },
+    {
+      "Zeit": "12:05",
+      "Team": "Gast",
+      "Stand": "7:6",
+      "Ereignis": "Tor",
+      "Person": "25 Olivia Schwarz"
+    },
+    {
+      "Zeit": "13:06",
+      "Team": "Heim",
+      "Stand": "8:6",
+      "Ereignis": "Tor",
+      "Person": "5 Fina Walluks"
+    },
+    {
+      "Zeit": "14:52",
+      "Team": "Gast",
+      "Stand": "8:7",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "25 Olivia Schwarz"
+    },
+    {
+      "Zeit": "16:34",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Verwarnung",
+      "Person": "77 Hedi Wigger"
+    },
+    {
+      "Zeit": "17:04",
+      "Team": "Heim",
+      "Stand": "9:7",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "4 Ellis Meg Bruhn"
+    },
+    {
+      "Zeit": "18:06",
+      "Team": "Heim",
+      "Stand": "10:7",
+      "Ereignis": "Tor",
+      "Person": "5 Fina Walluks"
+    },
+    {
+      "Zeit": "18:40",
+      "Team": "Gast",
+      "Stand": "10:8",
+      "Ereignis": "Tor",
+      "Person": "77 Hedi Wigger"
+    },
+    {
+      "Zeit": "21:13",
+      "Team": "Gast",
+      "Stand": "10:9",
+      "Ereignis": "Tor",
+      "Person": "Kretschmer"
+    },
+    {
+      "Zeit": "21:50",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "8 Tamina Kugler"
+    },
+    {
+      "Zeit": "22:09",
+      "Team": "Gast",
+      "Stand": "10:10",
+      "Ereignis": "Tor",
+      "Person": "Schwarz"
+    },
+    {
+      "Zeit": "22:32",
+      "Team": "Heim",
+      "Stand": "11:10",
+      "Ereignis": "Tor",
+      "Person": "2 Fine Petersen"
+    },
+    {
+      "Zeit": "23:24",
+      "Team": "Heim",
+      "Stand": "12:10",
+      "Ereignis": "Tor",
+      "Person": "9 Carina Wulff"
+    },
+    {
+      "Zeit": "24:33",
+      "Team": "Gast",
+      "Stand": "12:11",
+      "Ereignis": "Tor",
+      "Person": "Jakobsen"
+    },
+    {
+      "Zeit": "25:13",
+      "Team": "Gast",
+      "Stand": "12:12",
+      "Ereignis": "Tor",
+      "Person": "Kretschmer"
+    },
+    {
+      "Zeit": "26:22",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Auszeit",
+      "Person": "33 Josefine"
+    },
+    {
+      "Zeit": "27:21",
+      "Team": "Gast",
+      "Stand": "12:13",
+      "Ereignis": "Tor",
+      "Person": "Jakobsen"
+    },
+    {
+      "Zeit": "27:33",
+      "Team": "Heim",
+      "Stand": "13:13",
+      "Ereignis": "Tor",
+      "Person": "Bruhn"
+    },
+    {
+      "Zeit": "28:14",
+      "Team": "Heim",
+      "Stand": "14:13",
+      "Ereignis": "Tor",
+      "Person": "2 Fine Petersen"
+    },
+    {
+      "Zeit": "28:49",
+      "Team": "Gast",
+      "Stand": "14:14",
+      "Ereignis": "Tor",
+      "Person": "Rappitsch"
+    },
+    {
+      "Zeit": "29:29",
+      "Team": "Gast",
+      "Stand": "14:15",
+      "Ereignis": "Tor",
+      "Person": "Kretschmer"
+    },
+    {
+      "Zeit": "29:56",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "Schwarz"
+    },
+    {
+      "Zeit": "30:00",
+      "Team": "",
+      "Stand": "",
+      "Ereignis": "Teilende",
+      "Person": ""
+    },
+    {
+      "Zeit": "30:28",
+      "Team": "Gast",
+      "Stand": "14:16",
+      "Ereignis": "Tor",
+      "Person": "8 Tamina Kugler"
+    },
+    {
+      "Zeit": "31:42",
+      "Team": "Heim",
+      "Stand": "15:16",
+      "Ereignis": "Tor",
+      "Person": "9 Carina Wulff"
+    },
+    {
+      "Zeit": "32:33",
+      "Team": "Heim",
+      "Stand": "16:16",
+      "Ereignis": "Tor",
+      "Person": "Bruhn"
+    },
+    {
+      "Zeit": "33:24",
+      "Team": "Heim",
+      "Stand": "17:16",
+      "Ereignis": "Tor",
+      "Person": "9 Carina Wulff"
+    },
+    {
+      "Zeit": "34:53",
+      "Team": "Gast",
+      "Stand": "17:17",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "Schwarz"
+    },
+    {
+      "Zeit": "35:32",
+      "Team": "Heim",
+      "Stand": "18:17",
+      "Ereignis": "Tor",
+      "Person": "11 Leonie Raup"
+    },
+    {
+      "Zeit": "36:33",
+      "Team": "Gast",
+      "Stand": "18:18",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "Schwarz"
+    },
+    {
+      "Zeit": "37:51",
+      "Team": "Heim",
+      "Stand": "19:18",
+      "Ereignis": "Tor",
+      "Person": "17 Mia Sachse"
+    },
+    {
+      "Zeit": "38:41",
+      "Team": "Gast",
+      "Stand": "19:19",
+      "Ereignis": "Tor",
+      "Person": "8 Tamina Kugler"
+    },
+    {
+      "Zeit": "38:50",
+      "Team": "Heim",
+      "Stand": "20:19",
+      "Ereignis": "Tor",
+      "Person": "17 Mia Sachse"
+    },
+    {
+      "Zeit": "39:42",
+      "Team": "Gast",
+      "Stand": "20:20",
+      "Ereignis": "Tor",
+      "Person": "7 Lucia Dreßler"
+    },
+    {
+      "Zeit": "40:26",
+      "Team": "Heim",
+      "Stand": "21:20",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "Bruhn"
+    },
+    {
+      "Zeit": "41:48",
+      "Team": "Heim",
+      "Stand": "22:20",
+      "Ereignis": "Tor",
+      "Person": "17 Mia Sachse"
+    },
+    {
+      "Zeit": "41:55",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Auszeit",
+      "Person": "66 Julia"
+    },
+    {
+      "Zeit": "42:26",
+      "Team": "Gast",
+      "Stand": "22:21",
+      "Ereignis": "Tor",
+      "Person": "Kretschmer"
+    },
+    {
+      "Zeit": "44:47",
+      "Team": "Heim",
+      "Stand": "23:21",
+      "Ereignis": "Tor",
+      "Person": "5 Fina Walluks"
+    },
+    {
+      "Zeit": "45:33",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "Zwanziger"
+    },
+    {
+      "Zeit": "45:46",
+      "Team": "Gast",
+      "Stand": "23:22",
+      "Ereignis": "Tor",
+      "Person": "Kretschmer"
+    },
+    {
+      "Zeit": "46:04",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Verwarnung",
+      "Person": "Hungerecker"
+    },
+    {
+      "Zeit": "47:02",
+      "Team": "Gast",
+      "Stand": "23:23",
+      "Ereignis": "Tor",
+      "Person": "Radloff"
+    },
+    {
+      "Zeit": "48:52",
+      "Team": "Gast",
+      "Stand": "23:24",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "Schwarz"
+    },
+    {
+      "Zeit": "49:20",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "Wichmann"
+    },
+    {
+      "Zeit": "49:20",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Verwarnung",
+      "Person": "Prothmann"
+    },
+    {
+      "Zeit": "49:55",
+      "Team": "Heim",
+      "Stand": "24:24",
+      "Ereignis": "Tor",
+      "Person": "Zwanziger"
+    },
+    {
+      "Zeit": "50:19",
+      "Team": "Gast",
+      "Stand": "24:25",
+      "Ereignis": "Tor",
+      "Person": "7 Lucia Dreßler"
+    },
+    {
+      "Zeit": "50:35",
+      "Team": "Heim",
+      "Stand": "25:25",
+      "Ereignis": "Tor",
+      "Person": "17 Mia Sachse"
+    },
+    {
+      "Zeit": "51:20",
+      "Team": "Heim",
+      "Stand": "26:25",
+      "Ereignis": "Tor",
+      "Person": "9 Carina Wulff"
+    },
+    {
+      "Zeit": "52:02",
+      "Team": "Heim",
+      "Stand": "27:25",
+      "Ereignis": "Tor",
+      "Person": "5 Fina Walluks"
+    },
+    {
+      "Zeit": "52:06",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Auszeit",
+      "Person": ""
+    },
+    {
+      "Zeit": "52:33",
+      "Team": "Gast",
+      "Stand": "27:26",
+      "Ereignis": "Tor",
+      "Person": "8 Tamina Kugler"
+    },
+    {
+      "Zeit": "52:47",
+      "Team": "Heim",
+      "Stand": "28:26",
+      "Ereignis": "Tor",
+      "Person": "5 Fina Walluks"
+    },
+    {
+      "Zeit": "53:35",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "Zwanziger"
+    },
+    {
+      "Zeit": "53:39",
+      "Team": "Gast",
+      "Stand": "28:27",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "Schwarz"
+    },
+    {
+      "Zeit": "54:38",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Auszeit",
+      "Person": "25 Olivia"
+    },
+    {
+      "Zeit": "55:06",
+      "Team": "Gast",
+      "Stand": "28:28",
+      "Ereignis": "Tor",
+      "Person": "Schwarz"
+    },
+    {
+      "Zeit": "57:48",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "Wichmann"
+    },
+    {
+      "Zeit": "57:48",
+      "Team": "Heim",
+      "Stand": "29:28",
+      "Ereignis": "Tor",
+      "Person": "13 Lena Hewig"
+    },
+    {
+      "Zeit": "58:43",
+      "Team": "Gast",
+      "Stand": "29:29",
+      "Ereignis": "Tor",
+      "Person": "Radloff"
+    },
+    {
+      "Zeit": "58:55",
+      "Team": "Heim",
+      "Stand": "30:29",
+      "Ereignis": "Tor",
+      "Person": "13 Lena Hewig"
+    },
+    {
+      "Zeit": "60:00",
+      "Team": "",
+      "Stand": "",
+      "Ereignis": "Teilende",
+      "Person": ""
+    },
+    {
+      "Zeit": "60:00",
+      "Team": "",
+      "Stand": "",
+      "Ereignis": "Spielende",
+      "Person": "6 2 7 D H B 3 L E R W A 0 4 0 6 - 1 7 1 0 2 0 2 6 - 2 3 5 0 5 5"
+    }
+  ]
+}

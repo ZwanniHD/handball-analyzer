@@ -1,0 +1,1095 @@
+{
+  "metadata": {
+    "game_number": "2627DHB3LERWA0203",
+    "date": "20.09.2026, Spielbeginn 16:15",
+    "venue": "HANNOVER, SZ BADENSTEDT",
+    "home_team": "TV HANNOVER-BADENSTEDT",
+    "away_team": "SC SFN VECHTA",
+    "final_score": "35:30 (18-13), Sieger TV HANNOVER-BADENSTEDT",
+    "spectators": 150
+  },
+  "home_kader": [
+    {
+      "Nr": "2",
+      "Name": "Ann-Cathrin Dietrich",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": "45:32"
+    },
+    {
+      "Nr": "3",
+      "Name": "Alena Müller",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "7",
+      "Name": "Lena Seehausen",
+      "Tore": "3",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": "56:41"
+    },
+    {
+      "Nr": "8",
+      "Name": "Marlen Wills",
+      "Tore": "9",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": "54:29"
+    },
+    {
+      "Nr": "10",
+      "Name": "Nele Kurok",
+      "Tore": "4",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "11",
+      "Name": "Elies Charlott Mertens",
+      "Tore": "3",
+      "7m_Tore": "1/1",
+      "Verwarnung": "",
+      "Hinausstellungen": "27:06"
+    },
+    {
+      "Nr": "12",
+      "Name": "Marleen Wiegard",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "14",
+      "Name": "Anna Rudolf",
+      "Tore": "1",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": "05:34"
+    },
+    {
+      "Nr": "18",
+      "Name": "Leni Köwing",
+      "Tore": "1",
+      "7m_Tore": "1/1",
+      "Verwarnung": "",
+      "Hinausstellungen": "20:50"
+    },
+    {
+      "Nr": "39",
+      "Name": "Monja Nagel",
+      "Tore": "2",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "41",
+      "Name": "Jule-Marie Jördens",
+      "Tore": "9",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": "45:20"
+    },
+    {
+      "Nr": "70",
+      "Name": "Anastasia Zimmermann",
+      "Tore": "2",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "82",
+      "Name": "Nelli Scharf",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": "14:01"
+    },
+    {
+      "Nr": "83",
+      "Name": "Lotta Willuhn",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "87",
+      "Name": "Lea-Sophie Graich",
+      "Tore": "1",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "A",
+      "Name": "Chris-Domenik Dummer - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "B",
+      "Name": "Domenik Pflughaupt - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "C",
+      "Name": "Dante De Feo - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "D",
+      "Name": "Hanna Meyer - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    }
+  ],
+  "away_kader": [
+    {
+      "Nr": "1",
+      "Name": "Rike Kühling",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "5",
+      "Name": "Thea Johanna Hülsmann",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "8",
+      "Name": "Pia Grotz",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "10",
+      "Name": "Svenja Ruhöfer",
+      "Tore": "10",
+      "7m_Tore": "4/4",
+      "Verwarnung": "",
+      "Hinausstellungen": "21:54"
+    },
+    {
+      "Nr": "11",
+      "Name": "Juana Meyer",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "13",
+      "Name": "Nele Wessels",
+      "Tore": "5",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "16",
+      "Name": "Madita Guderle",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "21",
+      "Name": "Katherina Reisbich",
+      "Tore": "6",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "24",
+      "Name": "Karla Witte",
+      "Tore": "2",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "39",
+      "Name": "Frances Krüger",
+      "Tore": "1",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "75",
+      "Name": "Mira Post",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": "44:01"
+    },
+    {
+      "Nr": "91",
+      "Name": "Ava Lorisch",
+      "Tore": "4",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "A",
+      "Name": "Paul Schwaab - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "B",
+      "Name": "Jarne Borchardt - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "C",
+      "Name": "Iris Geerken - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    },
+    {
+      "Nr": "D",
+      "Name": "Emily Beyer - -",
+      "Tore": "",
+      "7m_Tore": "",
+      "Verwarnung": "",
+      "Hinausstellungen": ""
+    }
+  ],
+  "events": [
+    {
+      "Zeit": "00:00",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt 24 Karla Witte"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt 18 Leni Köwing"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt 10 Nele Kurok"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt 3 Alena Müller"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt 39 Monja Nagel"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt 14 Anna Rudolf"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt 82 Nelli Scharf"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt 8 Marlen Wills"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt 83 Lotta Willuhn"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt 0 Hanna Meyer"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt 13 Nele Wessels"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt 11 Juana Meyer"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt 91 Ava Lorisch"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt 75 Mira Post"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt 8 Pia Grotz"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt 29 Edna Esteves"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt 1 Rike Kühling"
+    },
+    {
+      "Zeit": "00:00",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Spieler aufgestellt"
+    },
+    {
+      "Zeit": "00:33",
+      "Team": "Heim",
+      "Stand": "1:0",
+      "Ereignis": "Tor",
+      "Person": "Jördens"
+    },
+    {
+      "Zeit": "01:13",
+      "Team": "Gast",
+      "Stand": "1:1",
+      "Ereignis": "Tor",
+      "Person": "91 Ava Lorisch"
+    },
+    {
+      "Zeit": "02:16",
+      "Team": "Heim",
+      "Stand": "2:1",
+      "Ereignis": "Tor",
+      "Person": "Seehausen"
+    },
+    {
+      "Zeit": "04:08",
+      "Team": "Gast",
+      "Stand": "2:2",
+      "Ereignis": "Tor",
+      "Person": "Ruhöfer"
+    },
+    {
+      "Zeit": "05:34",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Verwarnung",
+      "Person": "14 Anna Rudolf"
+    },
+    {
+      "Zeit": "06:12",
+      "Team": "Gast",
+      "Stand": "2:3",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "Ruhöfer"
+    },
+    {
+      "Zeit": "06:41",
+      "Team": "Gast",
+      "Stand": "2:4",
+      "Ereignis": "Tor",
+      "Person": "Reisbich"
+    },
+    {
+      "Zeit": "07:04",
+      "Team": "Heim",
+      "Stand": "3:4",
+      "Ereignis": "Tor",
+      "Person": "39 Monja Nagel"
+    },
+    {
+      "Zeit": "07:13",
+      "Team": "Gast",
+      "Stand": "3:5",
+      "Ereignis": "Tor",
+      "Person": "Reisbich"
+    },
+    {
+      "Zeit": "07:48",
+      "Team": "Heim",
+      "Stand": "4:5",
+      "Ereignis": "Tor",
+      "Person": "Jördens"
+    },
+    {
+      "Zeit": "08:29",
+      "Team": "Heim",
+      "Stand": "5:5",
+      "Ereignis": "Tor",
+      "Person": "8 Marlen Wills"
+    },
+    {
+      "Zeit": "09:03",
+      "Team": "Heim",
+      "Stand": "6:5",
+      "Ereignis": "Tor",
+      "Person": "8 Marlen Wills"
+    },
+    {
+      "Zeit": "09:47",
+      "Team": "Heim",
+      "Stand": "7:5",
+      "Ereignis": "Tor",
+      "Person": "14 Anna Rudolf"
+    },
+    {
+      "Zeit": "10:33",
+      "Team": "Gast",
+      "Stand": "7:6",
+      "Ereignis": "Tor",
+      "Person": "Reisbich"
+    },
+    {
+      "Zeit": "11:02",
+      "Team": "Heim",
+      "Stand": "8:6",
+      "Ereignis": "Tor",
+      "Person": "8 Marlen Wills"
+    },
+    {
+      "Zeit": "12:04",
+      "Team": "Heim",
+      "Stand": "9:6",
+      "Ereignis": "Tor",
+      "Person": "Jördens"
+    },
+    {
+      "Zeit": "12:41",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Auszeit",
+      "Person": "41 Jule-Marie"
+    },
+    {
+      "Zeit": "13:39",
+      "Team": "Heim",
+      "Stand": "10:6",
+      "Ereignis": "Tor",
+      "Person": "Jördens"
+    },
+    {
+      "Zeit": "14:01",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "82 Nelli Scharf"
+    },
+    {
+      "Zeit": "14:01",
+      "Team": "Gast",
+      "Stand": "10:7",
+      "Ereignis": "Tor",
+      "Person": "Reisbich"
+    },
+    {
+      "Zeit": "15:23",
+      "Team": "Heim",
+      "Stand": "11:7",
+      "Ereignis": "Tor",
+      "Person": "Jördens"
+    },
+    {
+      "Zeit": "15:50",
+      "Team": "Gast",
+      "Stand": "11:8",
+      "Ereignis": "Tor",
+      "Person": "Ruhöfer"
+    },
+    {
+      "Zeit": "16:35",
+      "Team": "Heim",
+      "Stand": "12:8",
+      "Ereignis": "Tor",
+      "Person": "10 Nele Kurok"
+    },
+    {
+      "Zeit": "17:23",
+      "Team": "Heim",
+      "Stand": "13:8",
+      "Ereignis": "Tor",
+      "Person": "10 Nele Kurok"
+    },
+    {
+      "Zeit": "18:17",
+      "Team": "Heim",
+      "Stand": "14:8",
+      "Ereignis": "Tor",
+      "Person": "8 Marlen Wills"
+    },
+    {
+      "Zeit": "18:41",
+      "Team": "Gast",
+      "Stand": "14:9",
+      "Ereignis": "Tor",
+      "Person": "Esteves"
+    },
+    {
+      "Zeit": "18:54",
+      "Team": "Heim",
+      "Stand": "15:9",
+      "Ereignis": "Tor",
+      "Person": "8 Marlen Wills"
+    },
+    {
+      "Zeit": "19:26",
+      "Team": "Heim",
+      "Stand": "16:9",
+      "Ereignis": "Tor",
+      "Person": "8 Marlen Wills"
+    },
+    {
+      "Zeit": "20:50",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "18 Leni Köwing"
+    },
+    {
+      "Zeit": "20:59",
+      "Team": "Gast",
+      "Stand": "16:10",
+      "Ereignis": "Tor",
+      "Person": "Wessels"
+    },
+    {
+      "Zeit": "21:36",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Verwarnung",
+      "Person": "Esteves"
+    },
+    {
+      "Zeit": "21:54",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Verwarnung",
+      "Person": "Ruhöfer"
+    },
+    {
+      "Zeit": "22:14",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Fehlwurf Jördens"
+    },
+    {
+      "Zeit": "24:58",
+      "Team": "Gast",
+      "Stand": "16:11",
+      "Ereignis": "Tor",
+      "Person": "Ruhöfer"
+    },
+    {
+      "Zeit": "26:27",
+      "Team": "Heim",
+      "Stand": "17:11",
+      "Ereignis": "Tor",
+      "Person": "Mertens"
+    },
+    {
+      "Zeit": "27:06",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "Mertens"
+    },
+    {
+      "Zeit": "27:27",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Auszeit",
+      "Person": "70 Anastasia"
+    },
+    {
+      "Zeit": "28:03",
+      "Team": "Heim",
+      "Stand": "18:11",
+      "Ereignis": "Tor",
+      "Person": "Zimmermann"
+    },
+    {
+      "Zeit": "28:13",
+      "Team": "Gast",
+      "Stand": "18:12",
+      "Ereignis": "Tor",
+      "Person": "Ruhöfer"
+    },
+    {
+      "Zeit": "29:31",
+      "Team": "Gast",
+      "Stand": "18:13",
+      "Ereignis": "Tor",
+      "Person": "Wessels"
+    },
+    {
+      "Zeit": "30:00",
+      "Team": "",
+      "Stand": "",
+      "Ereignis": "Teilende",
+      "Person": ""
+    },
+    {
+      "Zeit": "30:44",
+      "Team": "Gast",
+      "Stand": "18:14",
+      "Ereignis": "Tor",
+      "Person": "Esteves"
+    },
+    {
+      "Zeit": "32:15",
+      "Team": "Heim",
+      "Stand": "19:14",
+      "Ereignis": "Tor",
+      "Person": "8 Marlen Wills"
+    },
+    {
+      "Zeit": "33:30",
+      "Team": "Heim",
+      "Stand": "20:14",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "Mertens"
+    },
+    {
+      "Zeit": "33:51",
+      "Team": "Gast",
+      "Stand": "20:15",
+      "Ereignis": "Tor",
+      "Person": "91 Ava Lorisch"
+    },
+    {
+      "Zeit": "34:34",
+      "Team": "Heim",
+      "Stand": "21:15",
+      "Ereignis": "Tor",
+      "Person": "8 Marlen Wills"
+    },
+    {
+      "Zeit": "36:45",
+      "Team": "Heim",
+      "Stand": "22:15",
+      "Ereignis": "Tor",
+      "Person": "Mertens"
+    },
+    {
+      "Zeit": "38:06",
+      "Team": "Gast",
+      "Stand": "22:16",
+      "Ereignis": "Tor",
+      "Person": "91 Ava Lorisch"
+    },
+    {
+      "Zeit": "39:21",
+      "Team": "Gast",
+      "Stand": "22:17",
+      "Ereignis": "Tor",
+      "Person": "91 Ava Lorisch"
+    },
+    {
+      "Zeit": "40:30",
+      "Team": "Gast",
+      "Stand": "22:18",
+      "Ereignis": "Tor",
+      "Person": "Wessels"
+    },
+    {
+      "Zeit": "40:54",
+      "Team": "Heim",
+      "Stand": "23:18",
+      "Ereignis": "Tor",
+      "Person": "Jördens"
+    },
+    {
+      "Zeit": "41:32",
+      "Team": "Gast",
+      "Stand": "23:19",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "Ruhöfer"
+    },
+    {
+      "Zeit": "42:10",
+      "Team": "Heim",
+      "Stand": "24:19",
+      "Ereignis": "Tor",
+      "Person": "8 Marlen Wills"
+    },
+    {
+      "Zeit": "43:28",
+      "Team": "Heim",
+      "Stand": "25:19",
+      "Ereignis": "Tor",
+      "Person": "Jördens"
+    },
+    {
+      "Zeit": "44:00",
+      "Team": "Heim",
+      "Stand": "26:19",
+      "Ereignis": "Tor",
+      "Person": "39 Monja Nagel"
+    },
+    {
+      "Zeit": "44:01",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "75 Mira Post"
+    },
+    {
+      "Zeit": "44:04",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Auszeit",
+      "Person": "10 Svenja"
+    },
+    {
+      "Zeit": "44:26",
+      "Team": "Gast",
+      "Stand": "26:20",
+      "Ereignis": "Tor",
+      "Person": "Ruhöfer"
+    },
+    {
+      "Zeit": "44:54",
+      "Team": "Heim",
+      "Stand": "27:20",
+      "Ereignis": "Tor",
+      "Person": "Jördens"
+    },
+    {
+      "Zeit": "45:20",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "Jördens"
+    },
+    {
+      "Zeit": "45:32",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "Dietrich"
+    },
+    {
+      "Zeit": "45:32",
+      "Team": "Gast",
+      "Stand": "27:21",
+      "Ereignis": "Tor",
+      "Person": "Reisbich"
+    },
+    {
+      "Zeit": "47:22",
+      "Team": "Heim",
+      "Stand": "28:21",
+      "Ereignis": "Tor",
+      "Person": "Zimmermann"
+    },
+    {
+      "Zeit": "47:33",
+      "Team": "Gast",
+      "Stand": "28:22",
+      "Ereignis": "Tor",
+      "Person": "Reisbich"
+    },
+    {
+      "Zeit": "48:02",
+      "Team": "Gast",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "Esteves"
+    },
+    {
+      "Zeit": "48:02",
+      "Team": "Heim",
+      "Stand": "29:22",
+      "Ereignis": "Tor",
+      "Person": "Seehausen"
+    },
+    {
+      "Zeit": "48:22",
+      "Team": "Gast",
+      "Stand": "29:23",
+      "Ereignis": "Tor",
+      "Person": "24 Karla Witte"
+    },
+    {
+      "Zeit": "49:04",
+      "Team": "Heim",
+      "Stand": "30:23",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "18 Leni Köwing"
+    },
+    {
+      "Zeit": "49:49",
+      "Team": "Gast",
+      "Stand": "30:24",
+      "Ereignis": "Tor",
+      "Person": "24 Karla Witte"
+    },
+    {
+      "Zeit": "49:57",
+      "Team": "Heim",
+      "Stand": "31:24",
+      "Ereignis": "Tor",
+      "Person": "10 Nele Kurok"
+    },
+    {
+      "Zeit": "52:05",
+      "Team": "Gast",
+      "Stand": "31:25",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "Ruhöfer"
+    },
+    {
+      "Zeit": "52:47",
+      "Team": "Heim",
+      "Stand": "32:25",
+      "Ereignis": "Tor",
+      "Person": "10 Nele Kurok"
+    },
+    {
+      "Zeit": "53:20",
+      "Team": "Heim",
+      "Stand": "33:25",
+      "Ereignis": "Tor",
+      "Person": "Seehausen"
+    },
+    {
+      "Zeit": "53:33",
+      "Team": "Gast",
+      "Stand": "33:26",
+      "Ereignis": "Tor",
+      "Person": "Ruhöfer"
+    },
+    {
+      "Zeit": "54:29",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Zwei Minuten",
+      "Person": "8 Marlen Wills"
+    },
+    {
+      "Zeit": "55:01",
+      "Team": "Gast",
+      "Stand": "33:27",
+      "Ereignis": "Tor",
+      "Person": "Wessels"
+    },
+    {
+      "Zeit": "55:06",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "Auszeit",
+      "Person": "13 Nele"
+    },
+    {
+      "Zeit": "55:46",
+      "Team": "Gast",
+      "Stand": "33:28",
+      "Ereignis": "Tor",
+      "Person": "Wessels"
+    },
+    {
+      "Zeit": "56:41",
+      "Team": "Heim",
+      "Stand": "",
+      "Ereignis": "",
+      "Person": "Disqualifikation"
+    },
+    {
+      "Zeit": "56:46",
+      "Team": "Gast",
+      "Stand": "33:29",
+      "Ereignis": "Siebenmeter Tor",
+      "Person": "Ruhöfer"
+    },
+    {
+      "Zeit": "57:43",
+      "Team": "Heim",
+      "Stand": "34:29",
+      "Ereignis": "Tor",
+      "Person": "Graich"
+    },
+    {
+      "Zeit": "58:56",
+      "Team": "Gast",
+      "Stand": "34:30",
+      "Ereignis": "Tor",
+      "Person": "Krüger"
+    },
+    {
+      "Zeit": "60:00",
+      "Team": "",
+      "Stand": "",
+      "Ereignis": "Teilende",
+      "Person": ""
+    },
+    {
+      "Zeit": "60:00",
+      "Team": "",
+      "Stand": "",
+      "Ereignis": "Spielende",
+      "Person": "41 Jule-Marie"
+    },
+    {
+      "Zeit": "60:00",
+      "Team": "Heim",
+      "Stand": "35:30",
+      "Ereignis": "Tor",
+      "Person": "Jördens"
+    }
+  ]
+}
