@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "game_number": "2627DHB3LERWA2204",
+    "date": "17.04.2027",
+    "time": "18:30",
+    "home_team": "SC SFN VECHTA",
+    "away_team": "HSG EIDER HARDE",
+    "venue": "VECHTA-WEST, SH",
+    "league": "3. LIGA FRAUEN",
+    "matchday": 22,
+    "winner": "",
+    "final_score": "",
+    "halftime_score": "",
+    "spectators": 0,
+    "match_id": "392642"
+  },
+  "referees": [],
+  "match_officials": [],
+  "teams": {
+    "home": {
+      "name": "SC SFN VECHTA",
+      "players": [],
+      "officials": []
+    },
+    "away": {
+      "name": "HSG EIDER HARDE",
+      "players": [],
+      "officials": []
+    }
+  },
+  "timeline": [],
+  "parse_info": {
+    "complete": false,
+    "timeline_ok": false,
+    "roster_ok": true,
+    "warnings": [
+      "Spielverlauf leer",
+      "Kein Endstand im Spielbericht (Spiel evtl. nicht abgeschlossen)"
+    ],
+    "notes": [],
+    "pages": 1,
+    "events": 0,
+    "parsed_at": "2026-10-20T22:37:24"
+  }
+}

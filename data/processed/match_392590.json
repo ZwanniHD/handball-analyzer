@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "game_number": "2627DHB3LERWA1306",
+    "date": "28.11.2026",
+    "time": "19:00",
+    "home_team": "SV GRÜN WEISS SCHWERIN",
+    "away_team": "HSG BLOMBERG-LIPPE 2",
+    "venue": "SPORTHALLE REIFERBAHN",
+    "league": "3. LIGA FRAUEN",
+    "matchday": 13,
+    "winner": "",
+    "final_score": "",
+    "halftime_score": "",
+    "spectators": 0,
+    "match_id": "392590"
+  },
+  "referees": [
+    {
+      "role": "SR A",
+      "name": "SVEN MÜHLENBERG",
+      "club": "MTV Lübeck"
+    },
+    {
+      "role": "SR B",
+      "name": "ROBY LÜDEMANN",
+      "club": "MTV Lübeck"
+    }
+  ],
+  "match_officials": [
+    {
+      "role": "ZEITNEHMER/SEKRETÄR",
+      "name": "ANETT LUSTIG",
+      "club": "SV Warnemünde 1949 e.V."
+    },
+    {
+      "role": "ZEITNEHMER/SEKRETÄR",
+      "name": "ANDREA ZIMMERMANN",
+      "club": "Mecklenburger SV"
+    }
+  ],
+  "teams": {
+    "home": {
+      "name": "SV GRÜN WEISS SCHWERIN",
+      "players": [],
+      "officials": []
+    },
+    "away": {
+      "name": "HSG BLOMBERG-LIPPE 2",
+      "players": [],
+      "officials": []
+    }
+  },
+  "timeline": [],
+  "parse_info": {
+    "complete": false,
+    "timeline_ok": false,
+    "roster_ok": true,
+    "warnings": [
+      "Spielverlauf leer",
+      "Kein Endstand im Spielbericht (Spiel evtl. nicht abgeschlossen)"
+    ],
+    "notes": [],
+    "pages": 1,
+    "events": 0,
+    "parsed_at": "2026-10-20T22:37:20"
+  }
+}

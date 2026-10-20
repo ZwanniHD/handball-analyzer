@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "game_number": "2627DHB3LERWA1104",
+    "date": "05.12.2026",
+    "time": "16:00",
+    "home_team": "HSG EIDER HARDE",
+    "away_team": "SC SFN VECHTA",
+    "venue": "WERNER KUHRT HALLE",
+    "league": "3. LIGA FRAUEN",
+    "matchday": 11,
+    "winner": "",
+    "final_score": "",
+    "halftime_score": "",
+    "spectators": 0,
+    "match_id": "392576"
+  },
+  "referees": [],
+  "match_officials": [
+    {
+      "role": "ZEITNEHMER/SEKRETÄR",
+      "name": "MATTHIAS KOCK",
+      "club": "Slesvig IF"
+    },
+    {
+      "role": "ZEITNEHMER/SEKRETÄR",
+      "name": "RALF RATHJE",
+      "club": "Kieler MTV"
+    }
+  ],
+  "teams": {
+    "home": {
+      "name": "HSG EIDER HARDE",
+      "players": [],
+      "officials": []
+    },
+    "away": {
+      "name": "SC SFN VECHTA",
+      "players": [],
+      "officials": []
+    }
+  },
+  "timeline": [],
+  "parse_info": {
+    "complete": false,
+    "timeline_ok": false,
+    "roster_ok": true,
+    "warnings": [
+      "Spielverlauf leer",
+      "Kein Endstand im Spielbericht (Spiel evtl. nicht abgeschlossen)"
+    ],
+    "notes": [],
+    "pages": 1,
+    "events": 0,
+    "parsed_at": "2026-10-20T22:37:18"
+  }
+}

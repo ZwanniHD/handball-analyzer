@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "game_number": "2627DHB3LERWA1303",
+    "date": "19.12.2026",
+    "time": "18:30",
+    "home_team": "SC SFN VECHTA",
+    "away_team": "TV HANNOVER-BADENSTEDT",
+    "venue": "VECHTA-WEST, SH",
+    "league": "3. LIGA FRAUEN",
+    "matchday": 13,
+    "winner": "",
+    "final_score": "",
+    "halftime_score": "",
+    "spectators": 0,
+    "match_id": "392587"
+  },
+  "referees": [],
+  "match_officials": [
+    {
+      "role": "ZEITNEHMER/SEKRETÄR",
+      "name": "THOMAS FOLTYN",
+      "club": "Garbsener SC"
+    },
+    {
+      "role": "ZEITNEHMER/SEKRETÄR",
+      "name": "MARKUS SCHMIDT",
+      "club": "Garbsener SC"
+    }
+  ],
+  "teams": {
+    "home": {
+      "name": "SC SFN VECHTA",
+      "players": [],
+      "officials": []
+    },
+    "away": {
+      "name": "TV HANNOVER-BADENSTEDT",
+      "players": [],
+      "officials": []
+    }
+  },
+  "timeline": [],
+  "parse_info": {
+    "complete": false,
+    "timeline_ok": false,
+    "roster_ok": true,
+    "warnings": [
+      "Spielverlauf leer",
+      "Kein Endstand im Spielbericht (Spiel evtl. nicht abgeschlossen)"
+    ],
+    "notes": [],
+    "pages": 1,
+    "events": 0,
+    "parsed_at": "2026-10-20T22:37:20"
+  }
+}

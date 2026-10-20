@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "game_number": "2627DHB3LERWA1904",
+    "date": "12.03.2027",
+    "time": "20:30",
+    "home_team": "HSG EIDER HARDE",
+    "away_team": "BUXTEHUDER SV II",
+    "venue": "WERNER KUHRT HALLE",
+    "league": "3. LIGA FRAUEN",
+    "matchday": 19,
+    "winner": "",
+    "final_score": "",
+    "halftime_score": "",
+    "spectators": 0,
+    "match_id": "392624"
+  },
+  "referees": [],
+  "match_officials": [],
+  "teams": {
+    "home": {
+      "name": "HSG EIDER HARDE",
+      "players": [],
+      "officials": []
+    },
+    "away": {
+      "name": "BUXTEHUDER SV II",
+      "players": [],
+      "officials": []
+    }
+  },
+  "timeline": [],
+  "parse_info": {
+    "complete": false,
+    "timeline_ok": false,
+    "roster_ok": true,
+    "warnings": [
+      "Spielverlauf leer",
+      "Kein Endstand im Spielbericht (Spiel evtl. nicht abgeschlossen)"
+    ],
+    "notes": [],
+    "pages": 1,
+    "events": 0,
+    "parsed_at": "2026-10-20T22:37:22"
+  }
+}

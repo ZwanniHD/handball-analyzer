@@ -1,86 +1,202 @@
 import json
+import re
 import matplotlib.pyplot as plt
 import pandas as pd
-from src.analytics import load_all_games
+import seaborn as sns
 
 
-def plot_top_scorers_timeline():
-  games_df, player_stats_df = load_all_games()
+def generate_corrected_top_scorers(json_path="raw_pdf_dumps.json"):
+    # Load JSON raw PDF dumps
+    with open(json_path, "r", encoding="utf-8") as f:
+        dumps = json.load(f)
 
-  if player_stats_df.empty:
-    print('Keine Spielerdaten gefunden.')
-    return
+    player_data = {}
 
-  # Spieltag-Mapping aus data/all_match_ids.json laden
-  match_to_day = {}
-  try:
-    with open('data/all_match_ids.json', 'r', encoding='utf-8') as f:
-      all_ids = json.load(f)
-      match_to_day = {item['match_id']: item['matchday'] for item in all_ids}
-  except Exception:
-    pass
+    for match in dumps:
+        full_text = "\n".join([p["raw_text"] for p in match["pages"]])
 
-  player_stats_df['spieltag'] = player_stats_df['match_id'].map(match_to_day)
-  player_stats_df = player_stats_df.dropna(subset=['spieltag'])
-  player_stats_df['spieltag'] = player_stats_df['spieltag'].astype(int)
+        # Check if the match was actually played (must have valid goal results)
+        has_score = bool(re.search(r"\b\d{1,2}\s*:\s*\d{1,2}\b", full_text))
+        if not has_score:
+            continue  # Skip unplayed / future fixtures
 
-  # 1. Gesamttore pro Spielerin berechnen
-  total_scores = (
-      player_stats_df.groupby('person')['tore']
-      .sum()
-      .sort_values(ascending=False)
-  )
+        # Extract team names
+        heim_team, gast_team = "", ""
+        heim_m = re.search(
+            r"Heimmannschaft\s+(.*?)\s+(?:Spielort|Gastmannschaft)", full_text
+        )
+        if heim_m:
+            heim_team = heim_m.group(1).strip()
+        gast_m = re.search(
+            r"Gastmannschaft\s+(.*?)\s+(?:Endstand|\d+:\d+|\n)", full_text
+        )
+        if gast_m:
+            gast_team = gast_m.group(1).strip()
 
-  # Top 5 Torschützinnen der Liga
-  top_5_names = total_scores.head(5).index.tolist()
+        # Parse squad list table from pages 1 and 2
+        for page in match["pages"][:2]:
+            lines = page["raw_text"].split("\n")
+            current_team = ""
+            for line in lines:
+                if "Heim:" in line:
+                    current_team = line.replace("Heim:", "").strip()
+                elif "Gast:" in line:
+                    current_team = line.replace("Gast:", "").strip()
 
-  print('=== TOP 5 TORSCHÜTZINNEN DER LIGA ===')
-  for rank, name in enumerate(top_5_names, start=1):
-    print(f'{rank}. {name}: {total_scores[name]} Tore')
+                # Regex pattern matching player rows: Nr Name Goals (7m_goals/7m_attempts)
+                m = re.match(
+                    r"^\s*(\d+)\s+([A-Za-zÄÖÜäöüß–\-\s]+?)\s+(\d+)(?:\s+(\d+)/(\d+))?(?:\s+.*)?$",
+                    line,
+                )
+                if m:
+                    pname = m.group(2).strip()
 
-  # Filter auf Top 5
-  top_df = player_stats_df[player_stats_df['person'].isin(top_5_names)]
+                    # Exclude non-players / officials
+                    if pname in [
+                        "Name",
+                        "Rolle",
+                        "SR A",
+                        "SR B",
+                        "TECHNISCHE DELEGIERTE",
+                        "ZEITNEHMER/SEKRETÄR",
+                    ]:
+                        continue
+                    if any(char.isdigit() for char in pname):
+                        continue
 
-  # 2. Pivot-Tabelle erstellen & kumulierte Tore berechnen
-  pivot_df = top_df.pivot_table(
-      index='spieltag', columns='person', values='tore', aggfunc='sum'
-  ).fillna(0)
+                    goals = int(m.group(3))
+                    seven_m = int(m.group(4)) if m.group(4) else 0
 
-  # Lücken für spielfreie Tage mit den bisherigen Toren auffüllen
-  max_day = int(player_stats_df['spieltag'].max())
-  full_index = pd.Index(range(1, max_day + 1), name='spieltag')
-  pivot_df = pivot_df.reindex(full_index, fill_value=0)
+                    team_name = (
+                        current_team
+                        if current_team
+                        else (
+                            heim_team if "Heim" in line else gast_team
+                        )
+                    )
 
-  cum_goals = pivot_df.cumsum()
+                    key = (pname, team_name)
+                    if key not in player_data:
+                        player_data[key] = {
+                            "goals": 0,
+                            "7m": 0,
+                            "games_played": 0,
+                        }
 
-  # 3. Plot zeichnen
-  plt.figure(figsize=(11, 6))
+                    player_data[key]["goals"] += goals
+                    player_data[key]["7m"] += seven_m
+                    player_data[key]["games_played"] += 1
 
-  for player in top_5_names:
-    if player in cum_goals.columns:
-      plt.plot(
-          cum_goals.index,
-          cum_goals[player],
-          marker='o',
-          label=f'{player} ({int(cum_goals[player].iloc[-1])} Tore)',
-          linewidth=2.5,
-      )
+    # Format into DataFrame
+    rows = []
+    for (pname, team), stats in player_data.items():
+        games = stats["games_played"]
+        goals = stats["goals"]
+        avg = round(goals / games, 2) if games > 0 else 0.0
+        rows.append(
+            {
+                "person": pname,
+                "team": team,
+                "Gesamttore": goals,
+                "Siebenmeter": stats["7m"],
+                "Spiele": games,
+                "Tore_pro_Spiel": avg,
+            }
+        )
 
-  plt.title(
-      'Kumulierte Tore der Top-5-Torschützinnen (3. Liga Frauen Nord)',
-      fontsize=13,
-      pad=15,
-  )
-  plt.xlabel('Spieltag', fontsize=11)
-  plt.ylabel('Tore Gesamt', fontsize=11)
+    df = pd.DataFrame(rows).sort_values(
+        by=["Gesamttore", "Tore_pro_Spiel"], ascending=[False, False]
+    )
+    df["Rang"] = range(1, len(df) + 1)
+    df = df[
+        [
+            "Rang",
+            "person",
+            "team",
+            "Gesamttore",
+            "Siebenmeter",
+            "Spiele",
+            "Tore_pro_Spiel",
+        ]
+    ]
 
-  plt.xticks(range(1, max_day + 1))
-  plt.legend(title='Spielerin', bbox_to_anchor=(1.02, 1), loc='upper left')
-  plt.grid(True, linestyle='--', alpha=0.6)
-  plt.tight_layout()
-  plt.savefig('top_scorers_correct.png', dpi=300)
-  plt.show()
+    # Save to CSV
+    df.to_csv("torschuetzenliste.csv", index=False)
+    return df
 
 
-if __name__ == '__main__':
-  plot_top_scorers_timeline()
+def plot_top_scorers(df, top_n=10):
+    # Filter Top N scorers
+    df_top = df.head(top_n).copy()
+
+    # Calculate Field Goals vs 7m Goals
+    df_top["Feldtore"] = df_top["Gesamttore"] - df_top["Siebenmeter"]
+
+    # Plot styling
+    sns.set_theme(style="whitegrid")
+    fig, ax1 = plt.subplots(figsize=(12, 6))
+
+    # Stacked bar chart for Goals (Field Goals + 7m Goals)
+    bar1 = ax1.bar(
+        df_top["person"],
+        df_top["Feldtore"],
+        label="Feldtore",
+        color="#1f77b4",
+        alpha=0.85,
+    )
+    bar2 = ax1.bar(
+        df_top["person"],
+        df_top["Siebenmeter"],
+        bottom=df_top["Feldtore"],
+        label="7m-Tore",
+        color="#ff7f0e",
+        alpha=0.85,
+    )
+
+    ax1.set_ylabel("Gesamttore", fontsize=12, fontweight="bold")
+    ax1.set_xlabel("Spielerin", fontsize=12, fontweight="bold")
+    ax1.set_title(
+        f"Top {top_n} Torschützinnen (Bereinigt)", fontsize=14, fontweight="bold"
+    )
+    plt.xticks(rotation=30, ha="right")
+
+    # Secondary Y-Axis for Average Goals per Game (Line plot)
+    ax2 = ax1.twinx()
+    line = ax2.plot(
+        df_top["person"],
+        df_top["Tore_pro_Spiel"],
+        color="#2ca02c",
+        marker="o",
+        linewidth=2.5,
+        label="Tore pro Spiel",
+    )
+    ax2.set_ylabel(
+        "Tore pro Spiel", fontsize=12, fontweight="bold", color="#2ca02c"
+    )
+    ax2.grid(False)
+
+    # Annotate total goals on top of bars
+    for idx, row in df_top.iterrows():
+        ax1.text(
+            row["person"],
+            row["Gesamttore"] + 0.8,
+            f"{int(row['Gesamttore'])} ({row['Spiele']} Sp.)",
+            ha="center",
+            va="bottom",
+            fontsize=9,
+            fontweight="bold",
+        )
+
+    # Combined Legend
+    lines1, labels1 = ax1.get_legend_handles_labels()
+    lines2, labels2 = ax2.get_legend_handles_labels()
+    ax1.legend(lines1 + lines2, labels1 + labels2, loc="upper right")
+
+    plt.tight_layout()
+    plt.savefig("top_torschuetzen_plot.png", dpi=300)
+    plt.show()
+
+
+# Run pipeline
+df = generate_corrected_top_scorers("raw_pdf_dumps.json")
+plot_top_scorers(df, top_n=10)

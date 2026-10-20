@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "game_number": "2627DHB3LERWA1603",
+    "date": "13.02.2027",
+    "time": "16:30",
+    "home_team": "VFL OLDENBURG II",
+    "away_team": "FRANKFURTER HC",
+    "venue": "OLDENBURG-WECHLOY, BBS",
+    "league": "3. LIGA FRAUEN",
+    "matchday": 16,
+    "winner": "",
+    "final_score": "",
+    "halftime_score": "",
+    "spectators": 0,
+    "match_id": "392605"
+  },
+  "referees": [],
+  "match_officials": [],
+  "teams": {
+    "home": {
+      "name": "VFL OLDENBURG II",
+      "players": [],
+      "officials": []
+    },
+    "away": {
+      "name": "FRANKFURTER HC",
+      "players": [],
+      "officials": []
+    }
+  },
+  "timeline": [],
+  "parse_info": {
+    "complete": false,
+    "timeline_ok": false,
+    "roster_ok": true,
+    "warnings": [
+      "Spielverlauf leer",
+      "Kein Endstand im Spielbericht (Spiel evtl. nicht abgeschlossen)"
+    ],
+    "notes": [],
+    "pages": 1,
+    "events": 0,
+    "parsed_at": "2026-10-20T22:37:21"
+  }
+}

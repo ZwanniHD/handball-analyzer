@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "game_number": "2627DHB3LERWA1103",
+    "date": "05.12.2026",
+    "time": "17:00",
+    "home_team": "HC LEIPZIG II",
+    "away_team": "TSV NORD HARRISLEE",
+    "venue": "SH SPORTOBERSCHULE",
+    "league": "3. LIGA FRAUEN",
+    "matchday": 11,
+    "winner": "",
+    "final_score": "",
+    "halftime_score": "",
+    "spectators": 0,
+    "match_id": "392575"
+  },
+  "referees": [],
+  "match_officials": [
+    {
+      "role": "ZEITNEHMER/SEKRETÄR",
+      "name": "THOMAS FRANKE",
+      "club": "HVH Kamenz e.V."
+    },
+    {
+      "role": "ZEITNEHMER/SEKRETÄR",
+      "name": "MANDY FRANKE",
+      "club": "HVH Kamenz e.V."
+    }
+  ],
+  "teams": {
+    "home": {
+      "name": "HC LEIPZIG II",
+      "players": [],
+      "officials": []
+    },
+    "away": {
+      "name": "TSV NORD HARRISLEE",
+      "players": [],
+      "officials": []
+    }
+  },
+  "timeline": [],
+  "parse_info": {
+    "complete": false,
+    "timeline_ok": false,
+    "roster_ok": true,
+    "warnings": [
+      "Spielverlauf leer",
+      "Kein Endstand im Spielbericht (Spiel evtl. nicht abgeschlossen)"
+    ],
+    "notes": [],
+    "pages": 1,
+    "events": 0,
+    "parsed_at": "2026-10-20T22:37:19"
+  }
+}
