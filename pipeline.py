@@ -448,8 +448,8 @@ def parse_match_officials(page):
 
 # ---- 3e. Verknüpfung Kader <-> Spielverlauf ------------------------------------------------
 def enrich_players(teams: dict, timeline: list[dict]):
-    """Ordnet die Strafzeiten im Kader (alle in einer Spalte erkannt) über den Spielverlauf
-    den Arten Verwarnung / Zwei Minuten / Disqualifikation zu."""
+    """Ordnet die Strafzeiten im Kader über den Spielverlauf zu.
+    Nutzt den Spielverlauf als primäre Quelle, um Lücken in der Tabellenerkennung auszugleichen."""
     lookup = defaultdict(list)
     for e in timeline:
         side = SIDE_CELLS.get(e["team"].lower())
@@ -459,15 +459,35 @@ def enrich_players(teams: dict, timeline: list[dict]):
     for side in ("home", "away"):
         for p in teams[side]["players"]:
             p["warnings"], p["two_minutes"], p["disqualifications"] = [], [], []
-            for t in p["penalties"]:
-                events = " ".join(lookup.get((side, t, p["number"]), []))
-                if "verwarnung" in events:
-                    p["warnings"].append(t)
-                elif "zwei minuten" in events:
-                    p["two_minutes"].append(t)
-                elif "disqualifikation" in events:
-                    p["disqualifications"].append(t)
+            
+            # 1. Alle Strafen aus dem zuverlässigen Spielverlauf übernehmen
+            for (l_side, l_time, l_num), events_list in lookup.items():
+                if l_side == side and l_num == p["number"]:
+                    events_str = " ".join(events_list)
+                    if "verwarnung" in events_str and l_time not in p["warnings"]:
+                        p["warnings"].append(l_time)
+                    if "zwei minuten" in events_str and l_time not in p["two_minutes"]:
+                        p["two_minutes"].append(l_time)
+                    if "disqualifikation" in events_str and l_time not in p["disqualifications"]:
+                        p["disqualifications"].append(l_time)
 
+            # 2. Fallback: Strafen, die nur in der Kader-Tabelle standen (und im Verlauf fehlen)
+            for t in p["penalties"]:
+                if t not in p["warnings"] and t not in p["two_minutes"] and t not in p["disqualifications"]:
+                    events = " ".join(lookup.get((side, t, p["number"]), []))
+                    if "verwarnung" in events:
+                        p["warnings"].append(t)
+                    elif "zwei minuten" in events:
+                        p["two_minutes"].append(t)
+                    elif "disqualifikation" in events:
+                        p["disqualifications"].append(t)
+            
+            # 3. Sammelliste "penalties" synchronisieren und chronologisch sortieren
+            all_penalties = set(p["warnings"] + p["two_minutes"] + p["disqualifications"] + p["penalties"])
+            p["penalties"] = sorted(list(all_penalties), key=lambda x: to_seconds(x) or 0)
+            p["warnings"] = sorted(p["warnings"], key=lambda x: to_seconds(x) or 0)
+            p["two_minutes"] = sorted(p["two_minutes"], key=lambda x: to_seconds(x) or 0)
+            p["disqualifications"] = sorted(p["disqualifications"], key=lambda x: to_seconds(x) or 0)
 
 # ---- 3f. Plausibilitätsprüfung --------------------------------------------------------
 def run_checks(meta: dict, teams: dict, timeline: list[dict]) -> dict:
