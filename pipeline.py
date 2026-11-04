@@ -34,12 +34,19 @@ OUT_DIR = Path("data/processed")
 IDS_FILE = Path("data/all_match_ids.json")
 
 HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-        " (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    ),
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
     "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7",
     "Referer": "https://www.handball.net/",
+    "Origin": "https://www.handball.net",
+    "sec-ch-ua": '"Not:A-Brand";v="8", "Chromium";v="156", "Google Chrome";v="156"',
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": '"Windows"',
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    # Hier den aktuellsten Token einfügen:
+    "x-client-token": "1793665978423.7fb1b5ec59afa515.064bc1ae5fd5d090.563a32455c2568fba8a5a53c99e79e43b94f075b8fe5de7bec6cbcf6372bef0e",
 }
 
 TIME_RE = re.compile(r"^\d{2,3}:\d{2}(?:\s*Uhr)?$")
