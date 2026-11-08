@@ -26,7 +26,8 @@ def default_team():
         "start_h2_tore": 0, "start_h2_geg": 0, "ende_h2_tore": 0, "ende_h2_geg": 0,
         "max_lauf": 0, "crunch_time_tore": 0, "max_comeback": 0,
         "schnelle_mitte_sekunden": [], "torkrisen_max_sekunden": 0,
-        "ueberzahl_bilanz": []
+        "ueberzahl_bilanz": [],
+        "siege": 0, "unent": 0, "nieder": 0
     }
 
 def default_player():
@@ -48,7 +49,9 @@ def load_and_aggregate_data():
     penalty_minutes = defaultdict(int)
 
     if not DATA_DIR.exists():
-        return {}, {}, {}, {}, {}, {}
+        return {}, {}, {}, {}, {}, {}, {}
+
+    spiel_daten = []
 
     for file in DATA_DIR.glob("match_*.json"):
         with open(file, "r", encoding="utf-8") as f:
@@ -58,18 +61,28 @@ def load_and_aggregate_data():
         date_str = meta.get("date")
         matchday = meta.get("matchday", 0)
         
+        parsed_date = None
         if date_str:
             try:
                 match_date = datetime.strptime(date_str, "%d.%m.%Y")
                 if match_date > CURRENT_DATE: continue
+                parsed_date = match_date
             except ValueError: pass 
+
+        if not meta.get("final_score"):   # noch nicht gespielt / nicht abgeschlossen
+            continue
+        if parsed_date:
+            spiel_daten.append(parsed_date)
 
         for ref in match.get("referees", []) or meta.get("referees", []):
             name = ref.get("name") if isinstance(ref, dict) else ref
             if name: referees_count[name.strip()] += 1
                 
-        tk = meta.get("timekeeper", "") or meta.get("sekretaer", "")
-        if tk and isinstance(tk, str): timekeepers_count[tk.strip()] += 1
+        for off in match.get("match_officials", []):
+            rolle = str(off.get("role", "")).lower()
+            name = off.get("name")
+            if name and any(k in rolle for k in ("zeitnehm", "sekret")):
+                timekeepers_count[name.strip()] += 1
 
         teams = match.get("teams", {})
         if "home" not in teams or "away" not in teams: continue
@@ -82,6 +95,13 @@ def load_and_aggregate_data():
         if ":" in score:
             try: h_goals, a_goals = map(int, score.split(":"))
             except: pass
+
+        if h_goals > a_goals:
+            team_stats[h_name]["siege"] += 1; team_stats[a_name]["nieder"] += 1
+        elif a_goals > h_goals:
+            team_stats[a_name]["siege"] += 1; team_stats[h_name]["nieder"] += 1
+        else:
+            team_stats[h_name]["unent"] += 1; team_stats[a_name]["unent"] += 1
 
         spectators = meta.get("spectators", 0)
         team_stats[h_name]["spiele"] += 1; team_stats[h_name]["heimspiele"] += 1
@@ -136,6 +156,7 @@ def load_and_aggregate_data():
         last_scoring_team, last_scoring_time = None, 0
         first_goal_recorded = False
         active_penalties = []
+        seen_penalties = set()
 
         for event in timeline:
             ev_type = event.get("event", "").lower()
@@ -173,13 +194,17 @@ def load_and_aggregate_data():
             elif (1200 <= sec <= 1800) or (3000 <= sec <= 3600):
                 spieler_phase = "spaet"
 
-            if "2-minuten" in ev_type:
-                penalty_minutes[m] += 1
+            is_penalty = ev_type in ("zwei minuten", "disqualifikation")
+            pen_key = (ev_team, sec)
+            if is_penalty and pen_key not in seen_penalties:   # "Zwei Minuten" + "Disqualifikation" gleichzeitig nur einmal
+                seen_penalties.add(pen_key)
+                if ev_type == "zwei minuten":
+                    penalty_minutes[m] += 1
                 current_diff = diff if ev_team == "heim" else -diff
                 active_penalties.append({"team": team_name, "end_time": sec + 120, "start_diff": current_diff})
-                
+
                 # Spieler individuelle Strafen-Phase
-                if p_id:
+                if ev_type == "zwei minuten" and p_id:
                     if spieler_phase == "frueh": player_stats[p_id]["strafen_frueh"] += 1
                     elif spieler_phase == "spaet": player_stats[p_id]["strafen_spaet"] += 1
 
@@ -190,7 +215,7 @@ def load_and_aggregate_data():
                     team_stats[a_name if pen["team"] == h_name else h_name]["ueberzahl_bilanz"].append(-bilanz)
                     active_penalties.remove(pen)
 
-            if "tor" in ev_type:
+            if ev_type in ("tor", "siebenmeter tor"):
                 # Über-/Unterzahl: laufende Zeitstrafen beider Teams zum Zeitpunkt des Tores
                 own_pen = sum(1 for p in active_penalties if p["team"] == team_name and p["end_time"] > sec)
                 opp_pen = sum(1 for p in active_penalties if p["team"] == opp_name and p["end_time"] > sec)
@@ -213,8 +238,10 @@ def load_and_aggregate_data():
                     if spieler_phase == "frueh": player_stats[p_id]["tore_frueh"] += 1
                     elif spieler_phase == "spaet": player_stats[p_id]["tore_spaet"] += 1
 
-                if sec >= 3300 and abs(diff) <= 2 and p_id:
-                    player_stats[p_id]["clutch_tore"] += 1
+                if sec >= 3300 and abs(diff) <= 2:
+                    team_stats[team_name]["crunch_time_tore"] += 1
+                    if p_id:
+                        player_stats[p_id]["clutch_tore"] += 1
 
                 if team_name == current_run_team: current_run_count += 1
                 else: current_run_team = team_name; current_run_count = 1
@@ -247,14 +274,23 @@ def load_and_aggregate_data():
                     team_stats[team_name][f"{phase_key}_tore"] += 1
                     team_stats[opp_name][f"{phase_key}_geg"] += 1
 
+        final_diff = h_score_curr - a_score_curr
+        for pen in active_penalties:
+            current_diff = final_diff if pen["team"] == h_name else -final_diff
+            bilanz = current_diff - pen["start_diff"]
+            team_stats[a_name if pen["team"] == h_name else h_name]["ueberzahl_bilanz"].append(-bilanz)
+
         if h_goals >= a_goals:
             if abs(max_deficit_home) > team_stats[h_name]["max_comeback"]: team_stats[h_name]["max_comeback"] = abs(max_deficit_home)
         if a_goals >= h_goals:
             if max_deficit_away > team_stats[a_name]["max_comeback"]: team_stats[a_name]["max_comeback"] = max_deficit_away
 
-    return dict(team_stats), dict(player_stats), dict(referees_count), dict(timekeepers_count), dict(matchday_players), dict(penalty_minutes)
+    return dict(team_stats), dict(player_stats), dict(referees_count), dict(timekeepers_count), dict(matchday_players), dict(penalty_minutes), {
+        "spiele": len(spiel_daten),
+        "letztes_datum": max(spiel_daten) if spiel_daten else None,
+    }
 
-team_data, player_data, ref_data, tk_data, matchday_data, penalty_data = load_and_aggregate_data()
+team_data, player_data, ref_data, tk_data, matchday_data, penalty_data, data_info = load_and_aggregate_data()
 
 # --- 3. DATEN AUFBEREITEN ---
 if not team_data:
@@ -274,6 +310,10 @@ df_teams["Ø Zuschauer"] = (df_teams["zuschauer_gesamt"] / df_teams["heimspiele"
 df_teams["Ø_Schnelle_Mitte_Sek"] = df_teams["schnelle_mitte_sekunden"].apply(_mean)
 df_teams["Ø_Ueberzahl_PlusMinus"] = df_teams["ueberzahl_bilanz"].apply(_mean)
 df_teams["Torkrise_Max_Min"] = df_teams["torkrisen_max_sekunden"] / 60
+df_teams["Tordifferenz"] = df_teams["tore_erzielt"] - df_teams["tore_kassiert"]
+df_teams["Punkte"] = 2 * df_teams["siege"] + df_teams["unent"]          # 2 Punkte Sieg, 1 Punkt Unentschieden
+df_teams["Ueberzahl_Saldo"] = df_teams["ueberzahl_tore_erzielt"] - df_teams["ueberzahl_tore_kassiert"]
+df_teams["Unterzahl_Saldo"] = df_teams["unterzahl_tore_erzielt"] - df_teams["unterzahl_tore_kassiert"]
 
 df_players = pd.DataFrame.from_dict(player_data, orient="index").reset_index()
 df_players.rename(columns={"index": "Name_Raw"}, inplace=True)   # Name_Raw = "Name (Team)"
@@ -281,21 +321,42 @@ df_players["Name"] = df_players["Name_Raw"].apply(lambda x: x.split(" (")[0])
 df_players["Feldtore"] = df_players["tore"] - df_players["7m_tore"]
 
 
-# --- 4. HELFER (einheitliche Darstellung & Sortierung) ---
+# --- 4. DARSTELLUNG: STYLE & HELFER ---
+st.markdown(
+    """
+    <style>
+    .block-container {padding-top: 2.2rem; max-width: 1500px;}
+    div[data-testid="stMetric"] {
+        background: rgba(128,128,128,0.08);
+        border: 1px solid rgba(128,128,128,0.22);
+        border-radius: 12px; padding: 12px 16px;
+    }
+    button[data-baseweb="tab"] {font-weight: 600;}
+    h1 {margin-bottom: 0.2rem;}
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+
 def show(fig):
     """Zentrale Stelle für alle Plotly-Charts (bei Streamlit-Updates nur hier anpassen)."""
     st.plotly_chart(fig, width="stretch")
 
 
 def ranking(df, col, title, color="#3366cc", fmt=".1f", label="Team",
-            lower_is_better=False, top=None, color_by=None):
-    """Horizontales Ranking: bester Wert immer OBEN.
-    Standard: größter Wert oben (absteigend). Bei lower_is_better: kleinster Wert oben."""
+            lower_is_better=False, top=None, color_by=None, hide_if_all_zero=False):
+    """Horizontales Ranking: bester Wert immer OBEN, bei Gleichstand alphabetisch.
+    Standard: größter Wert oben. Bei lower_is_better: kleinster Wert oben."""
     if df is None or df.empty:
         st.info(f"Noch keine Daten für: {title}")
         return
     cols = [label, col] + ([color_by] if color_by else [])
-    d = df[cols].dropna(subset=[col]).sort_values(col, ascending=lower_is_better, kind="stable")
+    d = df[cols].dropna(subset=[col])
+    if d.empty or (hide_if_all_zero and (d[col] == 0).all()):
+        st.info(f"Noch keine Daten für: {title}")
+        return
+    d = d.sort_values([col, label], ascending=[lower_is_better, True], kind="stable")
     if top:
         d = d.head(top)
     order = d[label].tolist()
@@ -332,83 +393,122 @@ def compare_chart(rows, name_col, colors, fmt=".1f"):
     show(fig)
 
 
-def table(df, rename=None, height=None):
+def table(df, rename=None, height=None, column_config=None):
     """Tabelle mit Rang statt anonymem Index, lesbaren Spaltennamen und gerundeten Zahlen."""
     d = df.rename(columns=rename or {}).round(1).reset_index(drop=True)
     d.index = d.index + 1
     d.index.name = "Rang"
-    kwargs = {"height": height} if height else {}   # height=None ist ungültig -> dann weglassen
+    kwargs = {}
+    if height:
+        kwargs["height"] = height
+    if column_config:
+        kwargs["column_config"] = column_config
     st.dataframe(d, width="stretch", **kwargs)
 
 
+def note(text):
+    st.caption(text)
+
+
 # ==========================================
-# ANSICHTEN
+# BEREICH 1: LIGA
 # ==========================================
-def view_liga():
-    st.title("🏆 Liga-Vergleich")
+def tab_liga():
     spiele = int(df_teams["spiele"].sum() // 2)
     k1, k2, k3, k4 = st.columns(4)
     k1.metric("Teams", len(df_teams))
     k2.metric("Gespielte Spiele", spiele)
     k3.metric("Ø Tore pro Spiel (beide Teams)", f"{df_teams['tore_erzielt'].sum() / max(1, spiele):.1f}")
-    k4.metric("Ø Zuschauer (Heimspiele)", f"{df_teams['zuschauer_gesamt'].sum() / max(1, df_teams['heimspiele'].sum()):.0f}")
-    st.divider()
+    k4.metric("Ø Zuschauer (Heimspiele)",
+              f"{df_teams['zuschauer_gesamt'].sum() / max(1, df_teams['heimspiele'].sum()):.0f}")
+    st.write("")
 
-    c1, c2 = st.columns(2)
-    with c1:
-        ranking(df_teams, "Tore/Spiel", "🔥 Beste Offensive – Tore pro Spiel", "#3366cc")
-        ranking(df_teams, "2Min/Spiel", "⚠️ Meiste Zeitstrafen pro Spiel", "#dc3912")
-    with c2:
-        ranking(df_teams, "Gegentore/Spiel", "🧱 Beste Defensive – Gegentore pro Spiel", "#109618", lower_is_better=True)
-        ranking(df_teams[df_teams["siebenmeter_versuche"] > 5], "7m-Quote (%)",
-                "🎯 7-Meter-Quote (ab 6 Versuchen)", "#ff9900", fmt=".0f")
+    t_tab, t_off, t_disc = st.tabs(["📋 Tabelle", "🔥 Offensive & Defensive", "🎯 7m & Disziplin"])
+
+    with t_tab:
+        d = df_teams.sort_values(["Punkte", "Tordifferenz", "tore_erzielt", "Team"],
+                                 ascending=[False, False, False, True])
+        tab_df = d[["Team", "spiele", "siege", "unent", "nieder", "tore_erzielt", "tore_kassiert",
+                    "Tordifferenz", "Punkte"]].copy()
+        tab_df["Tore"] = tab_df["tore_erzielt"].astype(int).astype(str) + ":" + tab_df["tore_kassiert"].astype(int).astype(str)
+        tab_df = tab_df[["Team", "spiele", "siege", "unent", "nieder", "Tore", "Tordifferenz", "Punkte"]]
+        table(tab_df, {"spiele": "Sp", "siege": "S", "unent": "U", "nieder": "N", "Tordifferenz": "Diff", "Punkte": "Pkt"},
+              height=min(600, 36 * len(tab_df) + 40))
+        note("Berechnet aus den geparsten Spielberichten (2 Punkte Sieg, 1 Punkt Unentschieden). "
+             "Sortierung: Punkte, Tordifferenz, erzielte Tore. Nicht offiziell – Punktabzüge o. Ä. fehlen.")
+
+    with t_off:
+        c1, c2 = st.columns(2)
+        with c1:
+            ranking(df_teams, "Tore/Spiel", "🔥 Beste Offensive – Tore pro Spiel", "#3366cc")
+        with c2:
+            ranking(df_teams, "Gegentore/Spiel", "🧱 Beste Defensive – Gegentore pro Spiel", "#109618",
+                    lower_is_better=True)
+        ranking(df_teams, "Tordifferenz", "⚖️ Tordifferenz gesamt", "#17becf", fmt="+.0f")
+
+    with t_disc:
+        c1, c2 = st.columns(2)
+        with c1:
+            ranking(df_teams[df_teams["siebenmeter_versuche"] > 5], "7m-Quote (%)",
+                    "🎯 7-Meter-Quote (ab 6 Versuchen)", "#ff9900", fmt=".0f")
+        with c2:
+            ranking(df_teams, "2Min/Spiel", "⚠️ Meiste Zeitstrafen pro Spiel", "#dc3912",
+                    hide_if_all_zero=True)
 
 
-def view_team_detail():
-    st.title("🔍 Einzel-Team-Analyse")
-    team = st.selectbox("Team wählen:", sorted(df_teams["Team"].tolist()))
-    row = df_teams[df_teams["Team"] == team].iloc[0]
+# ==========================================
+# BEREICH 2: TEAMS
+# ==========================================
+def tab_teams():
+    t_detail, t_h2h = st.tabs(["🔍 Team-Analyse", "⚔️ Team-Vergleich (H2H)"])
 
-    k1, k2, k3, k4 = st.columns(4)
-    k1.metric("Absolvierte Spiele", int(row["spiele"]))
-    k2.metric("Ø Tore erzielt", f"{row['Tore/Spiel']:.1f}")
-    k3.metric("Ø Gegentore", f"{row['Gegentore/Spiel']:.1f}")
-    k4.metric("7m-Trefferquote", f"{row['7m-Quote (%)']:.1f} %")
-    st.divider()
+    with t_detail:
+        team = st.selectbox("Team wählen:", sorted(df_teams["Team"].tolist()), key="team_detail")
+        row = df_teams[df_teams["Team"] == team].iloc[0]
 
-    tp = df_players[df_players["team"] == team]
-    c1, c2 = st.columns(2)
-    with c1:
-        st.subheader("Top-Torschützinnen")
-        table(tp.sort_values(["tore", "spiele"], ascending=[False, True]).head(15)[["Name", "tore", "7m_tore"]],
-              {"tore": "Tore", "7m_tore": "davon 7m"})
-    with c2:
-        st.subheader("Zeitstrafen")
-        strafen = tp[tp["2min"] > 0].sort_values("2min", ascending=False)[["Name", "2min"]]
-        if strafen.empty:
-            st.info("Keine Zeitstrafen.")
+        k1, k2, k3, k4, k5 = st.columns(5)
+        k1.metric("Spiele", int(row["spiele"]))
+        k2.metric("Bilanz (S-U-N)", f"{int(row['siege'])}-{int(row['unent'])}-{int(row['nieder'])}")
+        k3.metric("Ø Tore erzielt", f"{row['Tore/Spiel']:.1f}")
+        k4.metric("Ø Gegentore", f"{row['Gegentore/Spiel']:.1f}")
+        k5.metric("7m-Quote", f"{row['7m-Quote (%)']:.0f} %")
+        st.write("")
+
+        tp = df_players[df_players["team"] == team]
+        c1, c2 = st.columns(2)
+        with c1:
+            st.subheader("Top-Torschützinnen")
+            table(tp.sort_values(["tore", "spiele", "Name"], ascending=[False, True, True]).head(15)
+                  [["Name", "spiele", "tore", "7m_tore"]],
+                  {"spiele": "Spiele", "tore": "Tore", "7m_tore": "davon 7m"})
+        with c2:
+            st.subheader("Zeitstrafen")
+            strafen = tp[tp["2min"] > 0].sort_values(["2min", "Name"], ascending=[False, True])[["Name", "2min"]]
+            if strafen.empty:
+                st.info("Keine Zeitstrafen.")
+            else:
+                table(strafen, {"2min": "2-Minuten"})
+
+    with t_h2h:
+        teams = sorted(df_teams["Team"].tolist())
+        c1, c2 = st.columns(2)
+        team_a = c1.selectbox("Team A", teams, index=0, key="h2h_a")
+        team_b = c2.selectbox("Team B", teams, index=1 if len(teams) > 1 else 0, key="h2h_b")
+        if team_a == team_b:
+            st.info("Bitte zwei verschiedene Teams wählen.")
         else:
-            table(strafen, {"2min": "2-Minuten"})
+            a = df_teams[df_teams["Team"] == team_a].iloc[0]
+            b = df_teams[df_teams["Team"] == team_b].iloc[0]
+            rows = []
+            for kpi in ["Tore/Spiel", "Gegentore/Spiel", "2Min/Spiel", "7m-Quote (%)", "Punkte", "Tordifferenz"]:
+                rows.append({"Metrik": kpi, "Team": team_a, "Wert": a[kpi]})
+                rows.append({"Metrik": kpi, "Team": team_b, "Wert": b[kpi]})
+            compare_chart(rows, "Team", ["#3366cc", "#ff9900"])
 
 
-def view_team_h2h():
-    st.title("⚔️ Direkter Team-Vergleich")
-    teams = sorted(df_teams["Team"].tolist())
-    c1, c2 = st.columns(2)
-    team_a = c1.selectbox("Team A", teams, index=0)
-    team_b = c2.selectbox("Team B", teams, index=1 if len(teams) > 1 else 0)
-    if team_a == team_b:
-        st.info("Bitte zwei verschiedene Teams wählen.")
-        return
-    a = df_teams[df_teams["Team"] == team_a].iloc[0]
-    b = df_teams[df_teams["Team"] == team_b].iloc[0]
-    rows = []
-    for kpi in ["Tore/Spiel", "Gegentore/Spiel", "2Min/Spiel", "7m-Quote (%)"]:
-        rows.append({"Metrik": kpi, "Team": team_a, "Wert": a[kpi]})
-        rows.append({"Metrik": kpi, "Team": team_b, "Wert": b[kpi]})
-    compare_chart(rows, "Team", ["#3366cc", "#ff9900"])
-
-
+# ==========================================
+# BEREICH 3: SPIELERINNEN
+# ==========================================
 TOP_KATEGORIEN = {
     "Meiste Tore (Gesamt)": "tore",
     "Meiste Feldtore": "Feldtore",
@@ -416,28 +516,30 @@ TOP_KATEGORIEN = {
     "Meiste 2-Minuten-Strafen": "2min",
 }
 
-def view_top_lists():
-    st.title("⭐ Ligaweite Top-Listen")
-    kat = st.radio("Kategorie:", list(TOP_KATEGORIEN), horizontal=True)
-    col = TOP_KATEGORIEN[kat]
-    top = (df_players[df_players[col] > 0]
-           .sort_values([col, "spiele"], ascending=[False, True])   # bei Gleichstand: weniger Spiele vorne
-           .head(25))
-    c1, c2 = st.columns([3, 2])
-    with c1:
-        ranking(top, col, f"Top 10 – {kat}", fmt=".0f", label="Name_Raw", top=10, color_by="team")
-    with c2:
-        st.subheader("Top 25")
-        table(top[["Name", "team", col]], {"team": "Team", col: kat.replace("Meiste ", "")}, height=600)
 
-
-def view_players():
-    st.title("👤 Individuelle Spieler-Analyse")
-    tab1, tab2, tab3 = st.tabs(["Profil & KPIs", "Spieler-Vergleich", "Saison-Rekorde"])
+def tab_players():
+    t_top, t_prof, t_vgl, t_rec, t_week, t_clutch = st.tabs(
+        ["⭐ Top-Listen", "👤 Profil", "🆚 Vergleich", "🏅 Rekorde", "📅 Team der Woche", "🧊 Clutch & Icebreaker"])
     alle = sorted(df_players["Name_Raw"].tolist())
 
-    with tab1:
-        wahl = st.selectbox("Spielerin wählen:", alle)
+    with t_top:
+        kat = st.radio("Kategorie:", list(TOP_KATEGORIEN), horizontal=True, key="top_kat")
+        col = TOP_KATEGORIEN[kat]
+        top = (df_players[df_players[col] > 0]
+               .sort_values([col, "spiele", "Name"], ascending=[False, True, True])   # Gleichstand: weniger Spiele vorne
+               .head(25))
+        if top.empty:
+            st.info("Noch keine Daten.")
+        else:
+            c1, c2 = st.columns([3, 2])
+            with c1:
+                ranking(top, col, f"Top 10 – {kat}", fmt=".0f", label="Name_Raw", top=10, color_by="team")
+            with c2:
+                st.subheader("Top 25")
+                table(top[["Name", "team", col]], {"team": "Team", col: kat.replace("Meiste ", "")}, height=600)
+
+    with t_prof:
+        wahl = st.selectbox("Spielerin wählen:", alle, key="prof_wahl")
         sp = df_players[df_players["Name_Raw"] == wahl].iloc[0]
         st.markdown(f"### {sp['Name']} · {sp['team']}")
 
@@ -446,12 +548,12 @@ def view_players():
         k2.metric("Tore", int(sp["tore"]))
         k3.metric("Tore pro Spiel", f"{sp['tore'] / max(1, sp['spiele']):.1f}")
         k4.metric("Bestwert in 1 Spiel", f"{int(sp['max_tore_ein_spiel'])} Tore")
-        st.divider()
+        st.write("")
 
         c1, c2 = st.columns(2)
         with c1:
             st.subheader("Torgefahr")
-            st.caption("Früh = erste 10 Min. jeder Halbzeit · Spät = letzte 10 Min. jeder Halbzeit")
+            note("Früh = erste 10 Min. jeder Halbzeit · Spät = letzte 10 Min. jeder Halbzeit")
             m1, m2 = st.columns(2)
             m1.metric("Tore früh", int(sp["tore_frueh"]))
             m2.metric("Tore spät", int(sp["tore_spaet"]))
@@ -464,7 +566,7 @@ def view_players():
             show(fig)
         with c2:
             st.subheader("Disziplin")
-            st.caption("Zeitstrafen bei hoher Frische (früh) vs. bei Ermüdung (spät)")
+            note("Zeitstrafen bei hoher Frische (früh) vs. bei Ermüdung (spät)")
             m1, m2 = st.columns(2)
             m1.metric("Strafen früh", int(sp["strafen_frueh"]))
             m2.metric("Strafen spät", int(sp["strafen_spaet"]))
@@ -477,10 +579,10 @@ def view_players():
                                   legend=dict(orientation="h", y=-0.05))
                 show(pie)
 
-    with tab2:
+    with t_vgl:
         c1, c2 = st.columns(2)
-        wahl_a = c1.selectbox("Spielerin A", alle, index=0)
-        wahl_b = c2.selectbox("Spielerin B", alle, index=1 if len(alle) > 1 else 0)
+        wahl_a = c1.selectbox("Spielerin A", alle, index=0, key="vgl_a")
+        wahl_b = c2.selectbox("Spielerin B", alle, index=1 if len(alle) > 1 else 0, key="vgl_b")
         if wahl_a == wahl_b:
             st.info("Bitte zwei verschiedene Spielerinnen wählen.")
         else:
@@ -494,43 +596,62 @@ def view_players():
                 rows.append({"Metrik": name, "Spielerin": wahl_b, "Wert": b[key]})
             compare_chart(rows, "Spielerin", ["#9467bd", "#8c564b"], fmt=".0f")
 
-    with tab3:
-        st.subheader("🏆 Die meisten Tore in einem Spiel")
-        ranking(df_players[df_players["max_tore_ein_spiel"] > 0], "max_tore_ein_spiel", "",
-                fmt=".0f", label="Name_Raw", top=15, color_by="team")
+    with t_rec:
+        ranking(df_players[df_players["max_tore_ein_spiel"] > 0], "max_tore_ein_spiel",
+                "🏆 Die meisten Tore in einem Spiel", fmt=".0f", label="Name_Raw", top=15, color_by="team")
+
+    with t_week:
+        tage = sorted(m for m in matchday_data.keys() if m != 0)
+        if not tage:
+            st.info("Noch keine Spieltagsdaten.")
+        else:
+            tag = st.selectbox("Spieltag:", tage, index=len(tage) - 1, key="woche_tag")
+            df = pd.DataFrame(matchday_data[tag])
+            if not df.empty:
+                df = df.sort_values(["Tore", "Feldtore", "Name"], ascending=[False, False, True]).head(7).copy()
+                df["Label"] = df["Name"] + " (" + df["Team"] + ")"
+                c1, c2 = st.columns([2, 3])
+                with c1:
+                    table(df[["Name", "Team", "Tore", "7m", "Feldtore"]])
+                with c2:
+                    ranking(df, "Tore", f"Top-Performer Spieltag {tag}", fmt=".0f", label="Label", color_by="Team")
+
+    with t_clutch:
+        c1, c2 = st.columns(2)
+        with c1:
+            st.subheader("Clutch-Tore")
+            note("Tore ab Minute 55 bei maximal 2 Toren Differenz")
+            d = df_players[df_players["clutch_tore"] > 0].sort_values(["clutch_tore", "Name"], ascending=[False, True])
+            if d.empty:
+                st.info("Noch keine Clutch-Tore.")
+            else:
+                table(d.head(10)[["Name", "team", "clutch_tore"]], {"team": "Team", "clutch_tore": "Clutch-Tore"})
+        with c2:
+            st.subheader("Icebreaker")
+            note("Erstes Tor des Spiels")
+            d = df_players[df_players["icebreaker"] > 0].sort_values(["icebreaker", "Name"], ascending=[False, True])
+            if d.empty:
+                st.info("Noch keine Icebreaker.")
+            else:
+                table(d.head(10)[["Name", "team", "icebreaker"]], {"team": "Team", "icebreaker": "Icebreaker"})
 
 
-def view_matchday():
-    st.title("⭐ Team der Woche")
-    tage = sorted(m for m in matchday_data.keys() if m != 0)
-    if not tage:
-        st.info("Noch keine Spieltagsdaten.")
-        return
-    tag = st.selectbox("Spieltag:", tage, index=len(tage) - 1)
-    df = pd.DataFrame(matchday_data[tag])
-    if df.empty:
-        return
-    df = df.sort_values(["Tore", "Feldtore"], ascending=[False, False]).head(7).copy()
-    df["Label"] = df["Name"] + " (" + df["Team"] + ")"
-    c1, c2 = st.columns([2, 3])
-    with c1:
-        table(df[["Name", "Team", "Tore", "7m", "Feldtore"]])
-    with c2:
-        ranking(df, "Tore", f"Top-Performer Spieltag {tag}", fmt=".0f", label="Label", color_by="Team")
+# ==========================================
+# BEREICH 4: SPIELVERLAUF
+# ==========================================
+def tab_flow():
+    t_ph, t_run, t_crunch, t_react, t_cond = st.tabs(
+        ["⏱️ 5-Minuten-Phasen", "🔗 Torserien", "🧊 Crunch-Time & Comebacks",
+         "⚡ Reaktion & Krisen", "🏃‍♀️ Kondition (H1 vs. H2)"])
 
-
-def view_phases():
-    st.title("⏱️ Spielphasen & Momentum")
-    tab1, tab2, tab3 = st.tabs(["5-Minuten-Phasen", "Torserien", "Crunch-Time & Comebacks"])
-
-    with tab1:
+    with t_ph:
         phasen = {
             "Start 1. Halbzeit (0–5 Min)": ("start_h1_tore", "start_h1_geg"),
             "Ende 1. Halbzeit (25–30 Min)": ("ende_h1_tore", "ende_h1_geg"),
             "Start 2. Halbzeit (30–35 Min)": ("start_h2_tore", "start_h2_geg"),
             "Ende 2. Halbzeit (55–60 Min)": ("ende_h2_tore", "ende_h2_geg"),
         }
-        phase = st.radio("Phase:", list(phasen), horizontal=True)
+        phase = st.radio("Phase:", list(phasen), horizontal=True, key="phase_wahl")
         c_tore, c_geg = phasen[phase]
         d = df_teams.assign(Phasen_Diff=df_teams[c_tore] - df_teams[c_geg])
         c1, c2 = st.columns(2)
@@ -538,48 +659,79 @@ def view_phases():
             ranking(d, c_tore, f"Geworfene Tore – {phase}", "#1f77b4", fmt=".0f")
         with c2:
             ranking(d, "Phasen_Diff", f"Tordifferenz (+/−) – {phase}", "#ff7f0e", fmt="+.0f")
-    with tab2:
+
+    with t_run:
         ranking(df_teams, "max_lauf", "Längste Torserie (Tore am Stück)", "#2ca02c", fmt=".0f")
-    with tab3:
+
+    with t_crunch:
+        note("Crunch-Time: Tore ab Minute 55 bei höchstens 2 Toren Differenz.")
         c1, c2 = st.columns(2)
         with c1:
-            ranking(df_teams, "crunch_time_tore", "Nervenstärke – Tore in der Crunch-Time", "#d62728", fmt=".0f")
+            ranking(df_teams, "crunch_time_tore", "Nervenstärke – Tore in der Crunch-Time", "#d62728",
+                    fmt=".0f", hide_if_all_zero=True)
         with c2:
             ranking(df_teams, "max_comeback", "Größter aufgeholter Rückstand", "#9467bd", fmt=".0f")
 
-
-def view_deep_dive():
-    st.title("🧠 Deep-Dive Analytics")
-    t1, t2, t3, t4, t5 = st.tabs(["⚡ Reaktion & Krisen", "⚖️ Überzahl", "🧊 Clutch & Icebreaker",
-                                  "🏃‍♀️ Kondition (H1 vs. H2)", "⏱️ Strafen nach Minute"])
-    with t1:
+    with t_react:
         c1, c2 = st.columns(2)
         with c1:
             ranking(df_teams[df_teams["Ø_Schnelle_Mitte_Sek"] > 0], "Ø_Schnelle_Mitte_Sek",
                     "Ø Reaktionszeit nach Gegentor (Sek.)", "#e377c2", lower_is_better=True)
         with c2:
             ranking(df_teams, "Torkrise_Max_Min", "Längste Torflaute (Minuten)", "#7f7f7f", lower_is_better=True)
-    with t2:
-        ranking(df_teams, "Ø_Ueberzahl_PlusMinus", "Ø Tordifferenz in Überzahl (pro Zeitstrafe)", "#17becf", fmt="+.2f")
-    with t3:
+
+    with t_cond:
+        note("Positiver Wert = Spielerin trifft in der 2. Halbzeit häufiger. Nur Spielerinnen mit > 5 Toren in einer Halbzeit.")
+        cond = df_players[(df_players["tore_h1"] > 5) | (df_players["tore_h2"] > 5)].copy()
+        if cond.empty:
+            st.info("Noch keine Spielerinnen mit mehr als 5 Toren in einer Halbzeit.")
+        else:
+            cond["H2_Dominanz"] = cond["tore_h2"] - cond["tore_h1"]
+            table(cond.sort_values(["H2_Dominanz", "Name"], ascending=[False, True])
+                  [["Name", "team", "tore_h1", "tore_h2", "H2_Dominanz"]],
+                  {"team": "Team", "tore_h1": "Tore H1", "tore_h2": "Tore H2", "H2_Dominanz": "H2-Dominanz"})
+
+
+# ==========================================
+# BEREICH 5: ÜBER-/UNTERZAHL & STRAFEN
+# ==========================================
+def tab_powerplay():
+    t_sum, t_ueber, t_unter, t_pen = st.tabs(
+        ["📋 Gesamtbilanz", "⬆️ Überzahl", "⬇️ Unterzahl", "⏱️ Strafen nach Minute"])
+
+    with t_sum:
+        d = df_teams.assign(Gesamtsaldo=df_teams["Ueberzahl_Saldo"] + df_teams["Unterzahl_Saldo"])
+        d = d.sort_values(["Gesamtsaldo", "Ueberzahl_Saldo", "Team"], ascending=[False, False, True])
+        table(d[["Team", "ueberzahl_tore_erzielt", "ueberzahl_tore_kassiert", "Ueberzahl_Saldo",
+                 "unterzahl_tore_erzielt", "unterzahl_tore_kassiert", "Unterzahl_Saldo", "Gesamtsaldo"]],
+              {"ueberzahl_tore_erzielt": "Tore in Überzahl", "ueberzahl_tore_kassiert": "Gegentore in Überzahl",
+               "Ueberzahl_Saldo": "Saldo Überzahl", "unterzahl_tore_erzielt": "Tore in Unterzahl",
+               "unterzahl_tore_kassiert": "Gegentore in Unterzahl", "Unterzahl_Saldo": "Saldo Unterzahl",
+               "Gesamtsaldo": "Gesamtsaldo"},
+              height=min(600, 36 * len(d) + 40))
+        note("Saldo = erzielte Tore − Gegentore in der jeweiligen Situation. Sortiert nach Gesamtsaldo.")
+
+    with t_ueber:
         c1, c2 = st.columns(2)
         with c1:
-            st.subheader("Clutch-Tore")
-            st.caption("Tore ab Minute 55 bei maximal 2 Toren Differenz")
-            table(df_players[df_players["clutch_tore"] > 0].sort_values("clutch_tore", ascending=False)
-                  .head(10)[["Name", "team", "clutch_tore"]], {"team": "Team", "clutch_tore": "Clutch-Tore"})
+            ranking(df_teams, "ueberzahl_tore_erzielt", "Tore in Überzahl", "#2ca02c", fmt=".0f",
+                    hide_if_all_zero=True)
         with c2:
-            st.subheader("Icebreaker")
-            st.caption("Erstes Tor des Spiels")
-            table(df_players[df_players["icebreaker"] > 0].sort_values("icebreaker", ascending=False)
-                  .head(10)[["Name", "team", "icebreaker"]], {"team": "Team", "icebreaker": "Icebreaker"})
-    with t4:
-        st.caption("Positiver Wert = Spielerin trifft in der 2. Halbzeit häufiger. Nur Spielerinnen mit > 5 Toren in einer Halbzeit.")
-        cond = df_players[(df_players["tore_h1"] > 5) | (df_players["tore_h2"] > 5)].copy()
-        cond["H2_Dominanz"] = cond["tore_h2"] - cond["tore_h1"]
-        table(cond.sort_values("H2_Dominanz", ascending=False)[["Name", "team", "tore_h1", "tore_h2", "H2_Dominanz"]],
-              {"team": "Team", "tore_h1": "Tore H1", "tore_h2": "Tore H2", "H2_Dominanz": "H2-Dominanz"})
-    with t5:
+            ranking(df_teams, "ueberzahl_tore_kassiert", "Gegentore in eigener Überzahl", "#ff9800", fmt=".0f",
+                    lower_is_better=True, hide_if_all_zero=True)
+        ranking(df_teams, "Ø_Ueberzahl_PlusMinus", "Ø Tordifferenz in Überzahl (pro gegnerischer Zeitstrafe)",
+                "#17becf", fmt="+.2f", hide_if_all_zero=True)
+
+    with t_unter:
+        c1, c2 = st.columns(2)
+        with c1:
+            ranking(df_teams, "unterzahl_tore_erzielt", "Tore in Unterzahl", "#17becf", fmt=".0f",
+                    hide_if_all_zero=True)
+        with c2:
+            ranking(df_teams, "unterzahl_tore_kassiert", "Gegentore in Unterzahl", "#e91e63", fmt=".0f",
+                    lower_is_better=True, hide_if_all_zero=True)
+
+    with t_pen:
         if penalty_data and sum(penalty_data.values()) > 0:
             letzte = max(60, max(penalty_data) + 1)
             df_pen = pd.DataFrame({"Minute": range(letzte)})
@@ -594,48 +746,42 @@ def view_deep_dive():
             st.info("Noch keine Zeitstrafen erfasst.")
 
 
-def view_crowd_and_powerplay():
-    st.title("🏟️ Zuschauer & Über-/Unterzahl")
-    tab1, tab2 = st.tabs(["Zuschauer", "Über-/Unterzahl"])
-    with tab1:
+# ==========================================
+# BEREICH 6: UMFELD
+# ==========================================
+def tab_environment():
+    t_fans, t_ref = st.tabs(["📢 Zuschauer", "👨‍⚖️ Schiedsrichter & Zeitnehmer"])
+
+    with t_fans:
         ranking(df_teams[df_teams["heimspiele"] > 0], "Ø Zuschauer", "Ø Zuschauer pro Heimspiel", "#9c27b0", fmt=".0f")
-    with tab2:
+
+    with t_ref:
         c1, c2 = st.columns(2)
-        with c1:
-            ranking(df_teams, "ueberzahl_tore_erzielt", "Tore in Überzahl", "#2ca02c", fmt=".0f")
-            ranking(df_teams, "unterzahl_tore_erzielt", "Tore in Unterzahl", "#17becf", fmt=".0f")
-        with c2:
-            ranking(df_teams, "unterzahl_tore_kassiert", "Gegentore in Unterzahl", "#e91e63", fmt=".0f")
-            ranking(df_teams, "ueberzahl_tore_kassiert", "Gegentore in gegnerischer Unterzahl", "#ff9800", fmt=".0f")
+        for col, title, data in [(c1, "Schiedsrichter", ref_data), (c2, "Zeitnehmer / Sekretariat", tk_data)]:
+            with col:
+                st.subheader(title)
+                if data:
+                    table(pd.DataFrame(list(data.items()), columns=["Name", "Einsätze"])
+                          .sort_values(["Einsätze", "Name"], ascending=[False, True]), height=520)
+                else:
+                    st.info("Keine Daten vorhanden.")
 
 
-def view_officials():
-    st.title("👨‍⚖️ Schiedsrichter & Zeitnehmer")
-    c1, c2 = st.columns(2)
-    for col, title, data in [(c1, "Schiedsrichter", ref_data), (c2, "Zeitnehmer / Sekretariat", tk_data)]:
-        with col:
-            st.subheader(title)
-            if data:
-                table(pd.DataFrame(list(data.items()), columns=["Name", "Einsätze"])
-                      .sort_values("Einsätze", ascending=False))
-            else:
-                st.info("Keine Daten vorhanden.")
+# --- 5. SEITENLEISTE & HAUPT-TABS ---
+with st.sidebar:
+    st.title("📊 Analyse-Zentrale")
+    st.caption("3. Liga Frauen Nord · Saison 2026/27")
+    st.metric("Ausgewertete Spiele", data_info.get("spiele", 0))
+    if data_info.get("letztes_datum"):
+        st.caption(f"Letztes Spiel: {data_info['letztes_datum'].strftime('%d.%m.%Y')}")
+    if st.button("🔄 Daten neu laden"):
+        st.cache_data.clear()
+        st.rerun()
 
+st.title("🤾 Handball Liga-Analyse")
 
-# --- 5. NAVIGATION ---
-VIEWS = {
-    "Liga-Vergleich (Teams)": view_liga,
-    "Detail-Analyse (Pro Team)": view_team_detail,
-    "Team-Vergleich (H2H)": view_team_h2h,
-    "Top-Listen (Spielerinnen)": view_top_lists,
-    "👤 Spieler-Profile & Vergleich": view_players,
-    "⭐ Team der Woche": view_matchday,
-    "⏱️ Spielphasen & Momentum": view_phases,
-    "🧠 Deep-Dive Analytics": view_deep_dive,
-    "🏟️ Zuschauer & Unterzahl": view_crowd_and_powerplay,
-    "👨‍⚖️ Schiedsrichter & Offizielle": view_officials,
-}
-
-st.sidebar.title("📊 Analyse-Zentrale")
-ansicht = st.sidebar.radio("Bereich wählen:", list(VIEWS))
-VIEWS[ansicht]()
+main_tabs = st.tabs(["🏆 Liga", "🛡️ Teams", "⭐ Spielerinnen", "⏱️ Spielverlauf",
+                     "⚖️ Über-/Unterzahl", "🏟️ Umfeld"])
+for tab, render in zip(main_tabs, [tab_liga, tab_teams, tab_players, tab_flow, tab_powerplay, tab_environment]):
+    with tab:
+        render()
