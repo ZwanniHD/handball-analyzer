@@ -46,7 +46,7 @@ HEADERS = {
     "sec-fetch-mode": "cors",
     "sec-fetch-site": "same-origin",
     # Hier den aktuellsten Token einfügen:
-    "x-client-token": "1793665978423.7fb1b5ec59afa515.064bc1ae5fd5d090.563a32455c2568fba8a5a53c99e79e43b94f075b8fe5de7bec6cbcf6372bef0e",
+    "x-client-token": "1794204968703.ffa4970b7383535a.207240fe0991fc35.c518f3621be6399d6c2e05fe271ecb66fff3e59cc61b554e8ec317a504dbf0a9",
 }
 
 TIME_RE = re.compile(r"^\d{2,3}:\d{2}(?:\s*Uhr)?$")

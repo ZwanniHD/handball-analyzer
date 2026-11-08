@@ -1,0 +1,1071 @@
+{
+  "metadata": {
+    "game_number": "2627DHB3LERWA0704",
+    "date": "31.10.2026",
+    "time": "18:30",
+    "home_team": "FRANKFURTER HC",
+    "away_team": "TUS 97 BIELEFELD/JÖLLENBECK",
+    "venue": "BRANDENBURG-HALLE",
+    "league": "3. LIGA FRAUEN",
+    "matchday": 7,
+    "winner": "FRANKFURTER HC",
+    "final_score": "33:23",
+    "halftime_score": "14-9",
+    "spectators": 415,
+    "match_id": "392552"
+  },
+  "referees": [
+    {
+      "role": "SR A",
+      "name": "LENNARD GEORG ZERLIN",
+      "club": "BSV 93 Magdeburg-Olvenstedt e. V."
+    },
+    {
+      "role": "SR B",
+      "name": "PHILIPP ETZOLD",
+      "club": "BSV 93 Magdeburg-Olvenstedt e. V."
+    }
+  ],
+  "match_officials": [
+    {
+      "role": "ZEITNEHMER/SEKRETÄR",
+      "name": "THOMAS PLATH",
+      "club": "Grünheider SV"
+    },
+    {
+      "role": "ZEITNEHMER/SEKRETÄR",
+      "name": "MICHEL NOWAK",
+      "club": "Grünheider SV"
+    }
+  ],
+  "teams": {
+    "home": {
+      "name": "FRANKFURTER HC",
+      "players": [
+        {
+          "number": 5,
+          "name": "Sofia Maria Da Silva Ferreira",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 9,
+          "name": "Ivona Skalicanova",
+          "goals": 3,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 13,
+          "name": "Tea Pogorelc",
+          "goals": 5,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 26,
+          "name": "Jette Scheibe",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 41,
+          "name": "Dajana Schnabel",
+          "goals": 3,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 45,
+          "name": "Jana Tsvirko–Neudakh",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 49,
+          "name": "Mandy Schneider",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 61,
+          "name": "Luana Miriam Gomes Jesus",
+          "goals": 3,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 62,
+          "name": "Adele Kasper",
+          "goals": 3,
+          "seven_m": null,
+          "penalties": [
+            "12:43",
+            "30:00"
+          ],
+          "warnings": [
+            "12:43"
+          ],
+          "two_minutes": [
+            "30:00"
+          ],
+          "disqualifications": []
+        },
+        {
+          "number": 75,
+          "name": "Dijana Dajic",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 79,
+          "name": "Sharon-Lea Dorson",
+          "goals": 4,
+          "seven_m": null,
+          "penalties": [
+            "26:39",
+            "58:19"
+          ],
+          "warnings": [],
+          "two_minutes": [
+            "26:39",
+            "58:19"
+          ],
+          "disqualifications": []
+        },
+        {
+          "number": 93,
+          "name": "Joana Rafaela Pires",
+          "goals": 5,
+          "seven_m": "2/3",
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 94,
+          "name": "Kássia Janete José César",
+          "goals": 3,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 99,
+          "name": "Cosima Cheyenne Hermann",
+          "goals": 4,
+          "seven_m": null,
+          "penalties": [
+            "40:07"
+          ],
+          "warnings": [],
+          "two_minutes": [
+            "40:07"
+          ],
+          "disqualifications": []
+        }
+      ],
+      "officials": [
+        {
+          "role": "A",
+          "name": "Marzel Bellack",
+          "penalties": []
+        },
+        {
+          "role": "B",
+          "name": "Pawel Kaniowski",
+          "penalties": []
+        },
+        {
+          "role": "C",
+          "name": "Monika Odrowska",
+          "penalties": []
+        },
+        {
+          "role": "D",
+          "name": "Josephine Christoph",
+          "penalties": []
+        }
+      ]
+    },
+    "away": {
+      "name": "TUS 97 BIELEFELD/JÖLLENBECK",
+      "players": [
+        {
+          "number": 4,
+          "name": "Dana Olbina",
+          "goals": 2,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 5,
+          "name": "Patricia Lazarevic",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 8,
+          "name": "Franziska Rolf",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 10,
+          "name": "Jana Brennecke",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 11,
+          "name": "Melina Gerdes",
+          "goals": 2,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 12,
+          "name": "Lana von der Wiede",
+          "goals": 7,
+          "seven_m": "6/7",
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 17,
+          "name": "Paulina Horstkötter",
+          "goals": 1,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 19,
+          "name": "Jette Knabbe",
+          "goals": 7,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 21,
+          "name": "Alina-Sophie von Mutius",
+          "goals": 1,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 22,
+          "name": "Saskia Winter",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 24,
+          "name": "Tina Stanojevic",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 27,
+          "name": "Fabienne Thiele",
+          "goals": 2,
+          "seven_m": null,
+          "penalties": [
+            "54:30"
+          ],
+          "warnings": [],
+          "two_minutes": [
+            "54:30"
+          ],
+          "disqualifications": []
+        },
+        {
+          "number": 37,
+          "name": "Katharina Riepe",
+          "goals": 1,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 99,
+          "name": "Klara Sousek",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        }
+      ],
+      "officials": [
+        {
+          "role": "A",
+          "name": "Dirk Heidemann",
+          "penalties": []
+        },
+        {
+          "role": "B",
+          "name": "Pierre Limberg",
+          "penalties": []
+        },
+        {
+          "role": "C",
+          "name": "Inga De Corte",
+          "penalties": []
+        }
+      ]
+    }
+  },
+  "timeline": [
+    {
+      "team": "",
+      "time": "00:00",
+      "score": "",
+      "event": "Anpfiff - 1. Halbzeit",
+      "person": "",
+      "person_number": null,
+      "person_name": ""
+    },
+    {
+      "team": "Heim",
+      "time": "01:43",
+      "score": "1:0",
+      "event": "Tor",
+      "person": "9 Ivona Skalicanova",
+      "person_number": 9,
+      "person_name": "Ivona Skalicanova"
+    },
+    {
+      "team": "Heim",
+      "time": "02:56",
+      "score": "2:0",
+      "event": "Tor",
+      "person": "62 Adele Kasper",
+      "person_number": 62,
+      "person_name": "Adele Kasper"
+    },
+    {
+      "team": "Gast",
+      "time": "03:36",
+      "score": "2:1",
+      "event": "Tor",
+      "person": "19 Jette Knabbe",
+      "person_number": 19,
+      "person_name": "Jette Knabbe"
+    },
+    {
+      "team": "Heim",
+      "time": "04:20",
+      "score": "3:1",
+      "event": "Siebenmeter Tor",
+      "person": "93 Joana Rafaela Pires",
+      "person_number": 93,
+      "person_name": "Joana Rafaela Pires"
+    },
+    {
+      "team": "Heim",
+      "time": "05:50",
+      "score": "4:1",
+      "event": "Tor",
+      "person": "79 Sharon-Lea Dorson",
+      "person_number": 79,
+      "person_name": "Sharon-Lea Dorson"
+    },
+    {
+      "team": "Gast",
+      "time": "06:27",
+      "score": "4:2",
+      "event": "Tor",
+      "person": "19 Jette Knabbe",
+      "person_number": 19,
+      "person_name": "Jette Knabbe"
+    },
+    {
+      "team": "Heim",
+      "time": "07:25",
+      "score": "5:2",
+      "event": "Siebenmeter Tor",
+      "person": "93 Joana Rafaela Pires",
+      "person_number": 93,
+      "person_name": "Joana Rafaela Pires"
+    },
+    {
+      "team": "Heim",
+      "time": "09:20",
+      "score": "6:2",
+      "event": "Tor",
+      "person": "99 Cosima Cheyenne Hermann",
+      "person_number": 99,
+      "person_name": "Cosima Cheyenne Hermann"
+    },
+    {
+      "team": "Gast",
+      "time": "09:29",
+      "score": "",
+      "event": "Auszeit",
+      "person": "",
+      "person_number": null,
+      "person_name": ""
+    },
+    {
+      "team": "Gast",
+      "time": "10:24",
+      "score": "",
+      "event": "Siebenmeter Fehlwurf",
+      "person": "8 Franziska Rolf",
+      "person_number": 8,
+      "person_name": "Franziska Rolf"
+    },
+    {
+      "team": "Heim",
+      "time": "12:43",
+      "score": "",
+      "event": "Verwarnung",
+      "person": "62 Adele Kasper",
+      "person_number": 62,
+      "person_name": "Adele Kasper"
+    },
+    {
+      "team": "Gast",
+      "time": "14:53",
+      "score": "6:3",
+      "event": "Tor",
+      "person": "27 Fabienne Thiele",
+      "person_number": 27,
+      "person_name": "Fabienne Thiele"
+    },
+    {
+      "team": "Heim",
+      "time": "15:07",
+      "score": "7:3",
+      "event": "Tor",
+      "person": "93 Joana Rafaela Pires",
+      "person_number": 93,
+      "person_name": "Joana Rafaela Pires"
+    },
+    {
+      "team": "Gast",
+      "time": "15:56",
+      "score": "7:4",
+      "event": "Tor",
+      "person": "4 Dana Olbina",
+      "person_number": 4,
+      "person_name": "Dana Olbina"
+    },
+    {
+      "team": "Gast",
+      "time": "17:05",
+      "score": "7:5",
+      "event": "Tor",
+      "person": "12 Lana von der Wiede",
+      "person_number": 12,
+      "person_name": "Lana von der Wiede"
+    },
+    {
+      "team": "Heim",
+      "time": "17:10",
+      "score": "8:5",
+      "event": "Tor",
+      "person": "13 Tea Pogorelc",
+      "person_number": 13,
+      "person_name": "Tea Pogorelc"
+    },
+    {
+      "team": "Heim",
+      "time": "18:12",
+      "score": "9:5",
+      "event": "Tor",
+      "person": "9 Ivona Skalicanova",
+      "person_number": 9,
+      "person_name": "Ivona Skalicanova"
+    },
+    {
+      "team": "Gast",
+      "time": "19:24",
+      "score": "",
+      "event": "Siebenmeter Fehlwurf",
+      "person": "8 Franziska Rolf",
+      "person_number": 8,
+      "person_name": "Franziska Rolf"
+    },
+    {
+      "team": "Heim",
+      "time": "20:08",
+      "score": "10:5",
+      "event": "Tor",
+      "person": "62 Adele Kasper",
+      "person_number": 62,
+      "person_name": "Adele Kasper"
+    },
+    {
+      "team": "Gast",
+      "time": "21:21",
+      "score": "10:6",
+      "event": "Tor",
+      "person": "37 Katharina Riepe",
+      "person_number": 37,
+      "person_name": "Katharina Riepe"
+    },
+    {
+      "team": "Heim",
+      "time": "21:46",
+      "score": "11:6",
+      "event": "Tor",
+      "person": "13 Tea Pogorelc",
+      "person_number": 13,
+      "person_name": "Tea Pogorelc"
+    },
+    {
+      "team": "Gast",
+      "time": "23:42",
+      "score": "11:7",
+      "event": "Tor",
+      "person": "27 Fabienne Thiele",
+      "person_number": 27,
+      "person_name": "Fabienne Thiele"
+    },
+    {
+      "team": "Heim",
+      "time": "24:25",
+      "score": "12:7",
+      "event": "Tor",
+      "person": "13 Tea Pogorelc",
+      "person_number": 13,
+      "person_name": "Tea Pogorelc"
+    },
+    {
+      "team": "Heim",
+      "time": "25:11",
+      "score": "13:7",
+      "event": "Tor",
+      "person": "13 Tea Pogorelc",
+      "person_number": 13,
+      "person_name": "Tea Pogorelc"
+    },
+    {
+      "team": "Heim",
+      "time": "26:39",
+      "score": "",
+      "event": "Zwei Minuten",
+      "person": "79 Sharon-Lea Dorson",
+      "person_number": 79,
+      "person_name": "Sharon-Lea Dorson"
+    },
+    {
+      "team": "Gast",
+      "time": "26:44",
+      "score": "13:8",
+      "event": "Siebenmeter Tor",
+      "person": "12 Lana von der Wiede",
+      "person_number": 12,
+      "person_name": "Lana von der Wiede"
+    },
+    {
+      "team": "Heim",
+      "time": "28:43",
+      "score": "14:8",
+      "event": "Tor",
+      "person": "93 Joana Rafaela Pires",
+      "person_number": 93,
+      "person_name": "Joana Rafaela Pires"
+    },
+    {
+      "team": "Gast",
+      "time": "29:17",
+      "score": "14:9",
+      "event": "Tor",
+      "person": "17 Paulina Horstkötter",
+      "person_number": 17,
+      "person_name": "Paulina Horstkötter"
+    },
+    {
+      "team": "Heim",
+      "time": "29:32",
+      "score": "",
+      "event": "Auszeit",
+      "person": "",
+      "person_number": null,
+      "person_name": ""
+    },
+    {
+      "team": "Heim",
+      "time": "30:00",
+      "score": "",
+      "event": "Zwei Minuten",
+      "person": "62 Adele Kasper",
+      "person_number": 62,
+      "person_name": "Adele Kasper"
+    },
+    {
+      "team": "",
+      "time": "30:00",
+      "score": "",
+      "event": "Anpfiff - 2. Halbzeit",
+      "person": "",
+      "person_number": null,
+      "person_name": ""
+    },
+    {
+      "team": "Heim",
+      "time": "30:27",
+      "score": "15:9",
+      "event": "Tor",
+      "person": "41 Dajana Schnabel",
+      "person_number": 41,
+      "person_name": "Dajana Schnabel"
+    },
+    {
+      "team": "Heim",
+      "time": "31:24",
+      "score": "16:9",
+      "event": "Tor",
+      "person": "61 Luana Miriam Gomes Jesus",
+      "person_number": 61,
+      "person_name": "Luana Miriam Gomes Jesus"
+    },
+    {
+      "team": "Gast",
+      "time": "32:04",
+      "score": "16:10",
+      "event": "Siebenmeter Tor",
+      "person": "12 Lana von der Wiede",
+      "person_number": 12,
+      "person_name": "Lana von der Wiede"
+    },
+    {
+      "team": "Heim",
+      "time": "32:28",
+      "score": "17:10",
+      "event": "Tor",
+      "person": "13 Tea Pogorelc",
+      "person_number": 13,
+      "person_name": "Tea Pogorelc"
+    },
+    {
+      "team": "Heim",
+      "time": "33:11",
+      "score": "18:10",
+      "event": "Tor",
+      "person": "9 Ivona Skalicanova",
+      "person_number": 9,
+      "person_name": "Ivona Skalicanova"
+    },
+    {
+      "team": "Heim",
+      "time": "34:07",
+      "score": "19:10",
+      "event": "Tor",
+      "person": "61 Luana Miriam Gomes Jesus",
+      "person_number": 61,
+      "person_name": "Luana Miriam Gomes Jesus"
+    },
+    {
+      "team": "Heim",
+      "time": "36:45",
+      "score": "",
+      "event": "Siebenmeter Fehlwurf",
+      "person": "93 Joana Rafaela Pires",
+      "person_number": 93,
+      "person_name": "Joana Rafaela Pires"
+    },
+    {
+      "team": "Heim",
+      "time": "37:29",
+      "score": "20:10",
+      "event": "Tor",
+      "person": "99 Cosima Cheyenne Hermann",
+      "person_number": 99,
+      "person_name": "Cosima Cheyenne Hermann"
+    },
+    {
+      "team": "Heim",
+      "time": "38:02",
+      "score": "21:10",
+      "event": "Tor",
+      "person": "99 Cosima Cheyenne Hermann",
+      "person_number": 99,
+      "person_name": "Cosima Cheyenne Hermann"
+    },
+    {
+      "team": "Gast",
+      "time": "38:11",
+      "score": "",
+      "event": "Auszeit",
+      "person": "",
+      "person_number": null,
+      "person_name": ""
+    },
+    {
+      "team": "Gast",
+      "time": "38:40",
+      "score": "21:11",
+      "event": "Tor",
+      "person": "11 Melina Gerdes",
+      "person_number": 11,
+      "person_name": "Melina Gerdes"
+    },
+    {
+      "team": "Gast",
+      "time": "39:43",
+      "score": "21:12",
+      "event": "Tor",
+      "person": "11 Melina Gerdes",
+      "person_number": 11,
+      "person_name": "Melina Gerdes"
+    },
+    {
+      "team": "Heim",
+      "time": "39:58",
+      "score": "22:12",
+      "event": "Tor",
+      "person": "41 Dajana Schnabel",
+      "person_number": 41,
+      "person_name": "Dajana Schnabel"
+    },
+    {
+      "team": "Heim",
+      "time": "40:07",
+      "score": "",
+      "event": "Zwei Minuten",
+      "person": "99 Cosima Cheyenne Hermann",
+      "person_number": 99,
+      "person_name": "Cosima Cheyenne Hermann"
+    },
+    {
+      "team": "Heim",
+      "time": "41:04",
+      "score": "23:12",
+      "event": "Tor",
+      "person": "93 Joana Rafaela Pires",
+      "person_number": 93,
+      "person_name": "Joana Rafaela Pires"
+    },
+    {
+      "team": "Heim",
+      "time": "41:22",
+      "score": "24:12",
+      "event": "Tor",
+      "person": "79 Sharon-Lea Dorson",
+      "person_number": 79,
+      "person_name": "Sharon-Lea Dorson"
+    },
+    {
+      "team": "Gast",
+      "time": "42:05",
+      "score": "24:13",
+      "event": "Siebenmeter Tor",
+      "person": "12 Lana von der Wiede",
+      "person_number": 12,
+      "person_name": "Lana von der Wiede"
+    },
+    {
+      "team": "Gast",
+      "time": "43:15",
+      "score": "24:14",
+      "event": "Tor",
+      "person": "21 Alina-Sophie von Mutius",
+      "person_number": 21,
+      "person_name": "Alina-Sophie von Mutius"
+    },
+    {
+      "team": "Heim",
+      "time": "43:58",
+      "score": "25:14",
+      "event": "Tor",
+      "person": "79 Sharon-Lea Dorson",
+      "person_number": 79,
+      "person_name": "Sharon-Lea Dorson"
+    },
+    {
+      "team": "Heim",
+      "time": "45:23",
+      "score": "26:14",
+      "event": "Tor",
+      "person": "94 Kássia Janete José César",
+      "person_number": 94,
+      "person_name": "Kássia Janete José César"
+    },
+    {
+      "team": "Gast",
+      "time": "45:38",
+      "score": "26:15",
+      "event": "Tor",
+      "person": "19 Jette Knabbe",
+      "person_number": 19,
+      "person_name": "Jette Knabbe"
+    },
+    {
+      "team": "Heim",
+      "time": "45:49",
+      "score": "27:15",
+      "event": "Tor",
+      "person": "79 Sharon-Lea Dorson",
+      "person_number": 79,
+      "person_name": "Sharon-Lea Dorson"
+    },
+    {
+      "team": "Heim",
+      "time": "46:08",
+      "score": "28:15",
+      "event": "Tor",
+      "person": "94 Kássia Janete José César",
+      "person_number": 94,
+      "person_name": "Kássia Janete José César"
+    },
+    {
+      "team": "Gast",
+      "time": "46:47",
+      "score": "28:16",
+      "event": "Tor",
+      "person": "4 Dana Olbina",
+      "person_number": 4,
+      "person_name": "Dana Olbina"
+    },
+    {
+      "team": "Heim",
+      "time": "47:07",
+      "score": "29:16",
+      "event": "Tor",
+      "person": "99 Cosima Cheyenne Hermann",
+      "person_number": 99,
+      "person_name": "Cosima Cheyenne Hermann"
+    },
+    {
+      "team": "Heim",
+      "time": "48:15",
+      "score": "30:16",
+      "event": "Tor",
+      "person": "94 Kássia Janete José César",
+      "person_number": 94,
+      "person_name": "Kássia Janete José César"
+    },
+    {
+      "team": "Gast",
+      "time": "49:17",
+      "score": "30:17",
+      "event": "Siebenmeter Tor",
+      "person": "12 Lana von der Wiede",
+      "person_number": 12,
+      "person_name": "Lana von der Wiede"
+    },
+    {
+      "team": "Heim",
+      "time": "50:36",
+      "score": "31:17",
+      "event": "Tor",
+      "person": "61 Luana Miriam Gomes Jesus",
+      "person_number": 61,
+      "person_name": "Luana Miriam Gomes Jesus"
+    },
+    {
+      "team": "Gast",
+      "time": "51:31",
+      "score": "31:18",
+      "event": "Siebenmeter Tor",
+      "person": "12 Lana von der Wiede",
+      "person_number": 12,
+      "person_name": "Lana von der Wiede"
+    },
+    {
+      "team": "Gast",
+      "time": "53:22",
+      "score": "31:19",
+      "event": "Tor",
+      "person": "19 Jette Knabbe",
+      "person_number": 19,
+      "person_name": "Jette Knabbe"
+    },
+    {
+      "team": "Gast",
+      "time": "54:30",
+      "score": "",
+      "event": "Zwei Minuten",
+      "person": "27 Fabienne Thiele",
+      "person_number": 27,
+      "person_name": "Fabienne Thiele"
+    },
+    {
+      "team": "Heim",
+      "time": "54:35",
+      "score": "",
+      "event": "Siebenmeter Fehlwurf",
+      "person": "61 Luana Miriam Gomes Jesus",
+      "person_number": 61,
+      "person_name": "Luana Miriam Gomes Jesus"
+    },
+    {
+      "team": "Gast",
+      "time": "55:17",
+      "score": "31:20",
+      "event": "Tor",
+      "person": "19 Jette Knabbe",
+      "person_number": 19,
+      "person_name": "Jette Knabbe"
+    },
+    {
+      "team": "Gast",
+      "time": "56:58",
+      "score": "31:21",
+      "event": "Siebenmeter Tor",
+      "person": "12 Lana von der Wiede",
+      "person_number": 12,
+      "person_name": "Lana von der Wiede"
+    },
+    {
+      "team": "Heim",
+      "time": "57:30",
+      "score": "32:21",
+      "event": "Tor",
+      "person": "41 Dajana Schnabel",
+      "person_number": 41,
+      "person_name": "Dajana Schnabel"
+    },
+    {
+      "team": "Heim",
+      "time": "57:45",
+      "score": "33:21",
+      "event": "Tor",
+      "person": "62 Adele Kasper",
+      "person_number": 62,
+      "person_name": "Adele Kasper"
+    },
+    {
+      "team": "Heim",
+      "time": "58:19",
+      "score": "",
+      "event": "Zwei Minuten",
+      "person": "79 Sharon-Lea Dorson",
+      "person_number": 79,
+      "person_name": "Sharon-Lea Dorson"
+    },
+    {
+      "team": "Gast",
+      "time": "58:24",
+      "score": "",
+      "event": "Siebenmeter Fehlwurf",
+      "person": "12 Lana von der Wiede",
+      "person_number": 12,
+      "person_name": "Lana von der Wiede"
+    },
+    {
+      "team": "Gast",
+      "time": "59:06",
+      "score": "33:22",
+      "event": "Tor",
+      "person": "19 Jette Knabbe",
+      "person_number": 19,
+      "person_name": "Jette Knabbe"
+    },
+    {
+      "team": "Gast",
+      "time": "59:54",
+      "score": "33:23",
+      "event": "Tor",
+      "person": "19 Jette Knabbe",
+      "person_number": 19,
+      "person_name": "Jette Knabbe"
+    },
+    {
+      "team": "",
+      "time": "60:00",
+      "score": "",
+      "event": "Ende 2. Halbzeit",
+      "person": "",
+      "person_number": null,
+      "person_name": ""
+    },
+    {
+      "team": "",
+      "time": "60:00",
+      "score": "",
+      "event": "Abpfiff",
+      "person": "",
+      "person_number": null,
+      "person_name": ""
+    }
+  ],
+  "parse_info": {
+    "complete": true,
+    "timeline_ok": true,
+    "roster_ok": true,
+    "warnings": [],
+    "notes": [],
+    "pages": 4,
+    "events": 74,
+    "parsed_at": "2026-11-08T19:19:42"
+  }
+}

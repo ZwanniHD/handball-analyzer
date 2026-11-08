@@ -1,0 +1,1251 @@
+{
+  "metadata": {
+    "game_number": "2627DHB3LERWA0801",
+    "date": "07.11.2026",
+    "time": "18:30",
+    "home_team": "SC SFN VECHTA",
+    "away_team": "SV FORTUNA 50 NEUBRANDENBURG",
+    "venue": "VECHTA-WEST, SH",
+    "league": "3. LIGA FRAUEN",
+    "matchday": 8,
+    "winner": "SV FORTUNA 50",
+    "final_score": "33:36",
+    "halftime_score": "12-16",
+    "spectators": 0,
+    "match_id": "392555"
+  },
+  "referees": [
+    {
+      "role": "SR A",
+      "name": "JANNIK WEIST",
+      "club": "VfL Gladbeck 1921 e.V."
+    },
+    {
+      "role": "SR B",
+      "name": "PATRICK VERHEYEN",
+      "club": "HSG DJK Rauxel-Schwerin e.V."
+    }
+  ],
+  "match_officials": [
+    {
+      "role": "SR-BEOBACHTER",
+      "name": "UWE REICHENBACH",
+      "club": ""
+    },
+    {
+      "role": "ZEITNEHMER/SEKRETÄR",
+      "name": "DANIEL MUTH",
+      "club": "SV Cappeln"
+    },
+    {
+      "role": "ZEITNEHMER/SEKRETÄR",
+      "name": "MARION MUTH",
+      "club": "SV Cappeln"
+    }
+  ],
+  "teams": {
+    "home": {
+      "name": "SC SFN VECHTA",
+      "players": [
+        {
+          "number": 1,
+          "name": "Rike Kühling",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 3,
+          "name": "Lisa Kuhlmann",
+          "goals": 2,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 9,
+          "name": "Emily Beyer",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 10,
+          "name": "Svenja Ruhöfer",
+          "goals": 8,
+          "seven_m": "7/7",
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 11,
+          "name": "Juana Meyer",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 13,
+          "name": "Nele Wessels",
+          "goals": 4,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 16,
+          "name": "Madita Guderle",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 21,
+          "name": "Katherina Reisbich",
+          "goals": 3,
+          "seven_m": null,
+          "penalties": [
+            "03:23",
+            "49:24"
+          ],
+          "warnings": [],
+          "two_minutes": [
+            "03:23",
+            "49:24"
+          ],
+          "disqualifications": []
+        },
+        {
+          "number": 24,
+          "name": "Karla Witte",
+          "goals": 11,
+          "seven_m": null,
+          "penalties": [
+            "19:50"
+          ],
+          "warnings": [],
+          "two_minutes": [
+            "19:50"
+          ],
+          "disqualifications": []
+        },
+        {
+          "number": 29,
+          "name": "Edna Esteves",
+          "goals": 1,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 39,
+          "name": "Frances Krüger",
+          "goals": 2,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 75,
+          "name": "Mira Post",
+          "goals": 2,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        }
+      ],
+      "officials": [
+        {
+          "role": "A",
+          "name": "Paul Schwaab",
+          "penalties": []
+        },
+        {
+          "role": "B",
+          "name": "Jarne Borchardt",
+          "penalties": []
+        },
+        {
+          "role": "C",
+          "name": "Iris Geerken",
+          "penalties": []
+        },
+        {
+          "role": "D",
+          "name": "Jette Dudda",
+          "penalties": []
+        },
+        {
+          "role": "E",
+          "name": "Pia Grotz",
+          "penalties": []
+        }
+      ]
+    },
+    "away": {
+      "name": "SV FORTUNA 50 NEUBRANDENBURG",
+      "players": [
+        {
+          "number": 4,
+          "name": "Jolene Preussler",
+          "goals": 3,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 6,
+          "name": "Vivien Haasmann",
+          "goals": 1,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 7,
+          "name": "Jessy Jonas",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 8,
+          "name": "Svea Schalk",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 9,
+          "name": "Fine Stenzel",
+          "goals": 8,
+          "seven_m": "1/2",
+          "penalties": [
+            "05:23"
+          ],
+          "warnings": [
+            "05:23"
+          ],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 10,
+          "name": "Nele Stenzel",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 13,
+          "name": "Anika Mensing",
+          "goals": 12,
+          "seven_m": "1/2",
+          "penalties": [
+            "55:19"
+          ],
+          "warnings": [],
+          "two_minutes": [
+            "55:19"
+          ],
+          "disqualifications": []
+        },
+        {
+          "number": 15,
+          "name": "Helena Philipp",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [
+            "27:15"
+          ],
+          "warnings": [],
+          "two_minutes": [
+            "27:15"
+          ],
+          "disqualifications": []
+        },
+        {
+          "number": 17,
+          "name": "Medea Chokheli",
+          "goals": 4,
+          "seven_m": null,
+          "penalties": [
+            "51:35"
+          ],
+          "warnings": [],
+          "two_minutes": [
+            "51:35"
+          ],
+          "disqualifications": []
+        },
+        {
+          "number": 18,
+          "name": "Madlen Kloska",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 33,
+          "name": "Johanna Krause",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 62,
+          "name": "Elisa Schmidt",
+          "goals": 7,
+          "seven_m": null,
+          "penalties": [
+            "13:57"
+          ],
+          "warnings": [],
+          "two_minutes": [
+            "13:57"
+          ],
+          "disqualifications": []
+        },
+        {
+          "number": 75,
+          "name": "Jet Abrahams",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 76,
+          "name": "Emma Skierke",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 81,
+          "name": "Klara Keilholtz",
+          "goals": 1,
+          "seven_m": null,
+          "penalties": [
+            "39:22"
+          ],
+          "warnings": [],
+          "two_minutes": [
+            "39:22"
+          ],
+          "disqualifications": []
+        },
+        {
+          "number": 99,
+          "name": "Marie Weber",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [
+            "47:01"
+          ],
+          "warnings": [],
+          "two_minutes": [
+            "47:01"
+          ],
+          "disqualifications": []
+        }
+      ],
+      "officials": [
+        {
+          "role": "A",
+          "name": "Manuela Stenzel",
+          "penalties": []
+        },
+        {
+          "role": "B",
+          "name": "Kay Butzlaff",
+          "penalties": []
+        },
+        {
+          "role": "C",
+          "name": "Ole Evert",
+          "penalties": []
+        }
+      ]
+    }
+  },
+  "timeline": [
+    {
+      "team": "",
+      "time": "00:00",
+      "score": "",
+      "event": "Anpfiff - 1. Halbzeit",
+      "person": "",
+      "person_number": null,
+      "person_name": ""
+    },
+    {
+      "team": "Heim",
+      "time": "00:57",
+      "score": "1:0",
+      "event": "Tor",
+      "person": "24 Karla Witte",
+      "person_number": 24,
+      "person_name": "Karla Witte"
+    },
+    {
+      "team": "Gast",
+      "time": "01:32",
+      "score": "1:1",
+      "event": "Tor",
+      "person": "17 Medea Chokheli",
+      "person_number": 17,
+      "person_name": "Medea Chokheli"
+    },
+    {
+      "team": "Gast",
+      "time": "01:56",
+      "score": "1:2",
+      "event": "Tor",
+      "person": "9 Fine Stenzel",
+      "person_number": 9,
+      "person_name": "Fine Stenzel"
+    },
+    {
+      "team": "Heim",
+      "time": "02:19",
+      "score": "2:2",
+      "event": "Tor",
+      "person": "24 Karla Witte",
+      "person_number": 24,
+      "person_name": "Karla Witte"
+    },
+    {
+      "team": "Gast",
+      "time": "03:01",
+      "score": "2:3",
+      "event": "Tor",
+      "person": "62 Elisa Schmidt",
+      "person_number": 62,
+      "person_name": "Elisa Schmidt"
+    },
+    {
+      "team": "Heim",
+      "time": "03:23",
+      "score": "",
+      "event": "Zwei Minuten",
+      "person": "21 Katherina Reisbich",
+      "person_number": 21,
+      "person_name": "Katherina Reisbich"
+    },
+    {
+      "team": "Gast",
+      "time": "05:23",
+      "score": "",
+      "event": "Verwarnung",
+      "person": "9 Fine Stenzel",
+      "person_number": 9,
+      "person_name": "Fine Stenzel"
+    },
+    {
+      "team": "Gast",
+      "time": "06:28",
+      "score": "2:4",
+      "event": "Tor",
+      "person": "9 Fine Stenzel",
+      "person_number": 9,
+      "person_name": "Fine Stenzel"
+    },
+    {
+      "team": "Gast",
+      "time": "06:44",
+      "score": "2:5",
+      "event": "Tor",
+      "person": "13 Anika Mensing",
+      "person_number": 13,
+      "person_name": "Anika Mensing"
+    },
+    {
+      "team": "Heim",
+      "time": "07:23",
+      "score": "3:5",
+      "event": "Tor",
+      "person": "21 Katherina Reisbich",
+      "person_number": 21,
+      "person_name": "Katherina Reisbich"
+    },
+    {
+      "team": "Gast",
+      "time": "07:58",
+      "score": "3:6",
+      "event": "Tor",
+      "person": "4 Jolene Preussler",
+      "person_number": 4,
+      "person_name": "Jolene Preussler"
+    },
+    {
+      "team": "Heim",
+      "time": "09:02",
+      "score": "4:6",
+      "event": "Siebenmeter Tor",
+      "person": "10 Svenja Ruhöfer",
+      "person_number": 10,
+      "person_name": "Svenja Ruhöfer"
+    },
+    {
+      "team": "Gast",
+      "time": "09:30",
+      "score": "4:7",
+      "event": "Tor",
+      "person": "9 Fine Stenzel",
+      "person_number": 9,
+      "person_name": "Fine Stenzel"
+    },
+    {
+      "team": "Heim",
+      "time": "10:13",
+      "score": "5:7",
+      "event": "Tor",
+      "person": "24 Karla Witte",
+      "person_number": 24,
+      "person_name": "Karla Witte"
+    },
+    {
+      "team": "Gast",
+      "time": "10:59",
+      "score": "5:8",
+      "event": "Tor",
+      "person": "13 Anika Mensing",
+      "person_number": 13,
+      "person_name": "Anika Mensing"
+    },
+    {
+      "team": "Gast",
+      "time": "12:11",
+      "score": "5:9",
+      "event": "Siebenmeter Tor",
+      "person": "13 Anika Mensing",
+      "person_number": 13,
+      "person_name": "Anika Mensing"
+    },
+    {
+      "team": "Gast",
+      "time": "13:57",
+      "score": "",
+      "event": "Zwei Minuten",
+      "person": "62 Elisa Schmidt",
+      "person_number": 62,
+      "person_name": "Elisa Schmidt"
+    },
+    {
+      "team": "Gast",
+      "time": "14:43",
+      "score": "5:10",
+      "event": "Tor",
+      "person": "9 Fine Stenzel",
+      "person_number": 9,
+      "person_name": "Fine Stenzel"
+    },
+    {
+      "team": "Heim",
+      "time": "14:48",
+      "score": "",
+      "event": "Auszeit",
+      "person": "",
+      "person_number": null,
+      "person_name": ""
+    },
+    {
+      "team": "Heim",
+      "time": "15:40",
+      "score": "6:10",
+      "event": "Tor",
+      "person": "24 Karla Witte",
+      "person_number": 24,
+      "person_name": "Karla Witte"
+    },
+    {
+      "team": "Gast",
+      "time": "16:15",
+      "score": "6:11",
+      "event": "Tor",
+      "person": "17 Medea Chokheli",
+      "person_number": 17,
+      "person_name": "Medea Chokheli"
+    },
+    {
+      "team": "Heim",
+      "time": "17:13",
+      "score": "7:11",
+      "event": "Tor",
+      "person": "39 Frances Krüger",
+      "person_number": 39,
+      "person_name": "Frances Krüger"
+    },
+    {
+      "team": "Heim",
+      "time": "17:47",
+      "score": "8:11",
+      "event": "Tor",
+      "person": "13 Nele Wessels",
+      "person_number": 13,
+      "person_name": "Nele Wessels"
+    },
+    {
+      "team": "Gast",
+      "time": "18:00",
+      "score": "8:12",
+      "event": "Tor",
+      "person": "13 Anika Mensing",
+      "person_number": 13,
+      "person_name": "Anika Mensing"
+    },
+    {
+      "team": "Heim",
+      "time": "18:08",
+      "score": "9:12",
+      "event": "Tor",
+      "person": "21 Katherina Reisbich",
+      "person_number": 21,
+      "person_name": "Katherina Reisbich"
+    },
+    {
+      "team": "Heim",
+      "time": "19:50",
+      "score": "",
+      "event": "Zwei Minuten",
+      "person": "24 Karla Witte",
+      "person_number": 24,
+      "person_name": "Karla Witte"
+    },
+    {
+      "team": "Gast",
+      "time": "19:56",
+      "score": "",
+      "event": "Siebenmeter Fehlwurf",
+      "person": "13 Anika Mensing",
+      "person_number": 13,
+      "person_name": "Anika Mensing"
+    },
+    {
+      "team": "Gast",
+      "time": "21:34",
+      "score": "9:13",
+      "event": "Tor",
+      "person": "13 Anika Mensing",
+      "person_number": 13,
+      "person_name": "Anika Mensing"
+    },
+    {
+      "team": "Heim",
+      "time": "22:17",
+      "score": "10:13",
+      "event": "Tor",
+      "person": "39 Frances Krüger",
+      "person_number": 39,
+      "person_name": "Frances Krüger"
+    },
+    {
+      "team": "Gast",
+      "time": "22:25",
+      "score": "10:14",
+      "event": "Tor",
+      "person": "13 Anika Mensing",
+      "person_number": 13,
+      "person_name": "Anika Mensing"
+    },
+    {
+      "team": "Gast",
+      "time": "24:56",
+      "score": "10:15",
+      "event": "Tor",
+      "person": "17 Medea Chokheli",
+      "person_number": 17,
+      "person_name": "Medea Chokheli"
+    },
+    {
+      "team": "Gast",
+      "time": "25:28",
+      "score": "10:16",
+      "event": "Tor",
+      "person": "4 Jolene Preussler",
+      "person_number": 4,
+      "person_name": "Jolene Preussler"
+    },
+    {
+      "team": "Gast",
+      "time": "26:35",
+      "score": "",
+      "event": "Auszeit",
+      "person": "",
+      "person_number": null,
+      "person_name": ""
+    },
+    {
+      "team": "Gast",
+      "time": "27:15",
+      "score": "",
+      "event": "Zwei Minuten",
+      "person": "15 Helena Philipp",
+      "person_number": 15,
+      "person_name": "Helena Philipp"
+    },
+    {
+      "team": "Heim",
+      "time": "27:26",
+      "score": "11:16",
+      "event": "Tor",
+      "person": "29 Edna Esteves",
+      "person_number": 29,
+      "person_name": "Edna Esteves"
+    },
+    {
+      "team": "Heim",
+      "time": "29:32",
+      "score": "12:16",
+      "event": "Tor",
+      "person": "75 Mira Post",
+      "person_number": 75,
+      "person_name": "Mira Post"
+    },
+    {
+      "team": "",
+      "time": "30:00",
+      "score": "",
+      "event": "Halbzeit",
+      "person": "",
+      "person_number": null,
+      "person_name": ""
+    },
+    {
+      "team": "",
+      "time": "30:00",
+      "score": "",
+      "event": "Anpfiff - 2. Halbzeit",
+      "person": "",
+      "person_number": null,
+      "person_name": ""
+    },
+    {
+      "team": "Gast",
+      "time": "31:18",
+      "score": "12:17",
+      "event": "Tor",
+      "person": "13 Anika Mensing",
+      "person_number": 13,
+      "person_name": "Anika Mensing"
+    },
+    {
+      "team": "Gast",
+      "time": "31:51",
+      "score": "12:18",
+      "event": "Tor",
+      "person": "17 Medea Chokheli",
+      "person_number": 17,
+      "person_name": "Medea Chokheli"
+    },
+    {
+      "team": "Heim",
+      "time": "33:23",
+      "score": "13:18",
+      "event": "Siebenmeter Tor",
+      "person": "10 Svenja Ruhöfer",
+      "person_number": 10,
+      "person_name": "Svenja Ruhöfer"
+    },
+    {
+      "team": "Gast",
+      "time": "34:00",
+      "score": "13:19",
+      "event": "Tor",
+      "person": "13 Anika Mensing",
+      "person_number": 13,
+      "person_name": "Anika Mensing"
+    },
+    {
+      "team": "Heim",
+      "time": "34:20",
+      "score": "14:19",
+      "event": "Siebenmeter Tor",
+      "person": "10 Svenja Ruhöfer",
+      "person_number": 10,
+      "person_name": "Svenja Ruhöfer"
+    },
+    {
+      "team": "Heim",
+      "time": "36:26",
+      "score": "15:19",
+      "event": "Tor",
+      "person": "75 Mira Post",
+      "person_number": 75,
+      "person_name": "Mira Post"
+    },
+    {
+      "team": "Gast",
+      "time": "36:35",
+      "score": "15:20",
+      "event": "Tor",
+      "person": "13 Anika Mensing",
+      "person_number": 13,
+      "person_name": "Anika Mensing"
+    },
+    {
+      "team": "Gast",
+      "time": "37:47",
+      "score": "15:21",
+      "event": "Tor",
+      "person": "13 Anika Mensing",
+      "person_number": 13,
+      "person_name": "Anika Mensing"
+    },
+    {
+      "team": "Gast",
+      "time": "38:25",
+      "score": "15:22",
+      "event": "Tor",
+      "person": "62 Elisa Schmidt",
+      "person_number": 62,
+      "person_name": "Elisa Schmidt"
+    },
+    {
+      "team": "Heim",
+      "time": "38:29",
+      "score": "",
+      "event": "Auszeit",
+      "person": "",
+      "person_number": null,
+      "person_name": ""
+    },
+    {
+      "team": "Gast",
+      "time": "39:22",
+      "score": "",
+      "event": "Zwei Minuten",
+      "person": "81 Klara Keilholtz",
+      "person_number": 81,
+      "person_name": "Klara Keilholtz"
+    },
+    {
+      "team": "Heim",
+      "time": "39:27",
+      "score": "16:22",
+      "event": "Siebenmeter Tor",
+      "person": "10 Svenja Ruhöfer",
+      "person_number": 10,
+      "person_name": "Svenja Ruhöfer"
+    },
+    {
+      "team": "Gast",
+      "time": "39:53",
+      "score": "16:23",
+      "event": "Tor",
+      "person": "62 Elisa Schmidt",
+      "person_number": 62,
+      "person_name": "Elisa Schmidt"
+    },
+    {
+      "team": "Heim",
+      "time": "40:18",
+      "score": "17:23",
+      "event": "Tor",
+      "person": "13 Nele Wessels",
+      "person_number": 13,
+      "person_name": "Nele Wessels"
+    },
+    {
+      "team": "Gast",
+      "time": "41:39",
+      "score": "17:24",
+      "event": "Tor",
+      "person": "62 Elisa Schmidt",
+      "person_number": 62,
+      "person_name": "Elisa Schmidt"
+    },
+    {
+      "team": "Heim",
+      "time": "41:53",
+      "score": "18:24",
+      "event": "Tor",
+      "person": "13 Nele Wessels",
+      "person_number": 13,
+      "person_name": "Nele Wessels"
+    },
+    {
+      "team": "Heim",
+      "time": "42:36",
+      "score": "19:24",
+      "event": "Tor",
+      "person": "13 Nele Wessels",
+      "person_number": 13,
+      "person_name": "Nele Wessels"
+    },
+    {
+      "team": "Gast",
+      "time": "43:33",
+      "score": "19:25",
+      "event": "Siebenmeter Tor",
+      "person": "9 Fine Stenzel",
+      "person_number": 9,
+      "person_name": "Fine Stenzel"
+    },
+    {
+      "team": "Heim",
+      "time": "43:51",
+      "score": "20:25",
+      "event": "Tor",
+      "person": "24 Karla Witte",
+      "person_number": 24,
+      "person_name": "Karla Witte"
+    },
+    {
+      "team": "Gast",
+      "time": "45:37",
+      "score": "",
+      "event": "Auszeit",
+      "person": "",
+      "person_number": null,
+      "person_name": ""
+    },
+    {
+      "team": "Heim",
+      "time": "45:37",
+      "score": "21:25",
+      "event": "Tor",
+      "person": "24 Karla Witte",
+      "person_number": 24,
+      "person_name": "Karla Witte"
+    },
+    {
+      "team": "Heim",
+      "time": "46:28",
+      "score": "22:25",
+      "event": "Siebenmeter Tor",
+      "person": "10 Svenja Ruhöfer",
+      "person_number": 10,
+      "person_name": "Svenja Ruhöfer"
+    },
+    {
+      "team": "Gast",
+      "time": "46:50",
+      "score": "22:26",
+      "event": "Tor",
+      "person": "9 Fine Stenzel",
+      "person_number": 9,
+      "person_name": "Fine Stenzel"
+    },
+    {
+      "team": "Gast",
+      "time": "47:01",
+      "score": "",
+      "event": "Zwei Minuten",
+      "person": "99 Marie Weber",
+      "person_number": 99,
+      "person_name": "Marie Weber"
+    },
+    {
+      "team": "Heim",
+      "time": "47:01",
+      "score": "23:26",
+      "event": "Tor",
+      "person": "24 Karla Witte",
+      "person_number": 24,
+      "person_name": "Karla Witte"
+    },
+    {
+      "team": "Gast",
+      "time": "47:52",
+      "score": "23:27",
+      "event": "Tor",
+      "person": "62 Elisa Schmidt",
+      "person_number": 62,
+      "person_name": "Elisa Schmidt"
+    },
+    {
+      "team": "Heim",
+      "time": "48:14",
+      "score": "24:27",
+      "event": "Tor",
+      "person": "3 Lisa Kuhlmann",
+      "person_number": 3,
+      "person_name": "Lisa Kuhlmann"
+    },
+    {
+      "team": "Gast",
+      "time": "48:34",
+      "score": "24:28",
+      "event": "Tor",
+      "person": "9 Fine Stenzel",
+      "person_number": 9,
+      "person_name": "Fine Stenzel"
+    },
+    {
+      "team": "Heim",
+      "time": "48:47",
+      "score": "25:28",
+      "event": "Tor",
+      "person": "24 Karla Witte",
+      "person_number": 24,
+      "person_name": "Karla Witte"
+    },
+    {
+      "team": "Heim",
+      "time": "49:24",
+      "score": "",
+      "event": "Zwei Minuten",
+      "person": "21 Katherina Reisbich",
+      "person_number": 21,
+      "person_name": "Katherina Reisbich"
+    },
+    {
+      "team": "Gast",
+      "time": "49:48",
+      "score": "25:29",
+      "event": "Tor",
+      "person": "81 Klara Keilholtz",
+      "person_number": 81,
+      "person_name": "Klara Keilholtz"
+    },
+    {
+      "team": "Gast",
+      "time": "50:45",
+      "score": "25:30",
+      "event": "Tor",
+      "person": "13 Anika Mensing",
+      "person_number": 13,
+      "person_name": "Anika Mensing"
+    },
+    {
+      "team": "Gast",
+      "time": "51:35",
+      "score": "",
+      "event": "Zwei Minuten",
+      "person": "17 Medea Chokheli",
+      "person_number": 17,
+      "person_name": "Medea Chokheli"
+    },
+    {
+      "team": "Gast",
+      "time": "52:22",
+      "score": "25:31",
+      "event": "Tor",
+      "person": "6 Vivien Haasmann",
+      "person_number": 6,
+      "person_name": "Vivien Haasmann"
+    },
+    {
+      "team": "Heim",
+      "time": "52:53",
+      "score": "26:31",
+      "event": "Siebenmeter Tor",
+      "person": "10 Svenja Ruhöfer",
+      "person_number": 10,
+      "person_name": "Svenja Ruhöfer"
+    },
+    {
+      "team": "Gast",
+      "time": "53:26",
+      "score": "26:32",
+      "event": "Tor",
+      "person": "13 Anika Mensing",
+      "person_number": 13,
+      "person_name": "Anika Mensing"
+    },
+    {
+      "team": "Heim",
+      "time": "53:43",
+      "score": "27:32",
+      "event": "Siebenmeter Tor",
+      "person": "10 Svenja Ruhöfer",
+      "person_number": 10,
+      "person_name": "Svenja Ruhöfer"
+    },
+    {
+      "team": "Gast",
+      "time": "54:30",
+      "score": "",
+      "event": "Siebenmeter Fehlwurf",
+      "person": "9 Fine Stenzel",
+      "person_number": 9,
+      "person_name": "Fine Stenzel"
+    },
+    {
+      "team": "Heim",
+      "time": "54:34",
+      "score": "28:32",
+      "event": "Tor",
+      "person": "24 Karla Witte",
+      "person_number": 24,
+      "person_name": "Karla Witte"
+    },
+    {
+      "team": "Gast",
+      "time": "55:19",
+      "score": "",
+      "event": "Zwei Minuten",
+      "person": "13 Anika Mensing",
+      "person_number": 13,
+      "person_name": "Anika Mensing"
+    },
+    {
+      "team": "Gast",
+      "time": "55:19",
+      "score": "28:33",
+      "event": "Tor",
+      "person": "9 Fine Stenzel",
+      "person_number": 9,
+      "person_name": "Fine Stenzel"
+    },
+    {
+      "team": "Heim",
+      "time": "55:40",
+      "score": "29:33",
+      "event": "Tor",
+      "person": "10 Svenja Ruhöfer",
+      "person_number": 10,
+      "person_name": "Svenja Ruhöfer"
+    },
+    {
+      "team": "Heim",
+      "time": "56:45",
+      "score": "30:33",
+      "event": "Tor",
+      "person": "24 Karla Witte",
+      "person_number": 24,
+      "person_name": "Karla Witte"
+    },
+    {
+      "team": "Gast",
+      "time": "58:11",
+      "score": "30:34",
+      "event": "Tor",
+      "person": "62 Elisa Schmidt",
+      "person_number": 62,
+      "person_name": "Elisa Schmidt"
+    },
+    {
+      "team": "Heim",
+      "time": "58:21",
+      "score": "31:34",
+      "event": "Tor",
+      "person": "24 Karla Witte",
+      "person_number": 24,
+      "person_name": "Karla Witte"
+    },
+    {
+      "team": "Heim",
+      "time": "58:52",
+      "score": "32:34",
+      "event": "Tor",
+      "person": "3 Lisa Kuhlmann",
+      "person_number": 3,
+      "person_name": "Lisa Kuhlmann"
+    },
+    {
+      "team": "Gast",
+      "time": "58:54",
+      "score": "",
+      "event": "Auszeit",
+      "person": "",
+      "person_number": null,
+      "person_name": ""
+    },
+    {
+      "team": "Gast",
+      "time": "59:17",
+      "score": "32:35",
+      "event": "Tor",
+      "person": "4 Jolene Preussler",
+      "person_number": 4,
+      "person_name": "Jolene Preussler"
+    },
+    {
+      "team": "Heim",
+      "time": "59:19",
+      "score": "",
+      "event": "Auszeit",
+      "person": "",
+      "person_number": null,
+      "person_name": ""
+    },
+    {
+      "team": "Gast",
+      "time": "59:34",
+      "score": "32:36",
+      "event": "Tor",
+      "person": "62 Elisa Schmidt",
+      "person_number": 62,
+      "person_name": "Elisa Schmidt"
+    },
+    {
+      "team": "Heim",
+      "time": "59:45",
+      "score": "33:36",
+      "event": "Tor",
+      "person": "21 Katherina Reisbich",
+      "person_number": 21,
+      "person_name": "Katherina Reisbich"
+    },
+    {
+      "team": "",
+      "time": "60:00",
+      "score": "",
+      "event": "Abpfiff",
+      "person": "",
+      "person_number": null,
+      "person_name": ""
+    }
+  ],
+  "parse_info": {
+    "complete": true,
+    "timeline_ok": true,
+    "roster_ok": true,
+    "warnings": [],
+    "notes": [],
+    "pages": 5,
+    "events": 91,
+    "parsed_at": "2026-11-08T19:20:04"
+  }
+}

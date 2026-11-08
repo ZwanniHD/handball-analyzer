@@ -1,0 +1,254 @@
+{
+  "metadata": {
+    "game_number": "2627DHB3LERWA0903",
+    "date": "14.11.2026",
+    "time": "19:15",
+    "home_team": "HSG EIDER HARDE",
+    "away_team": "TUS 97 BIELEFELD/JÖLLENBECK",
+    "venue": "WERNER KUHRT HALLE",
+    "league": "3. LIGA FRAUEN",
+    "matchday": 9,
+    "winner": "",
+    "final_score": "",
+    "halftime_score": "",
+    "spectators": 0,
+    "match_id": "392563"
+  },
+  "referees": [
+    {
+      "role": "SR A",
+      "name": "LEON KRÖHNERT",
+      "club": "TSV Kronshagen"
+    },
+    {
+      "role": "SR B",
+      "name": "FINN KRÖHNERT",
+      "club": "TSV Kronshagen"
+    }
+  ],
+  "match_officials": [
+    {
+      "role": "ZEITNEHMER/SEKRETÄR",
+      "name": "NICOLE GILDNER",
+      "club": "HSG SZOWW"
+    },
+    {
+      "role": "ZEITNEHMER/SEKRETÄR",
+      "name": "BIRGER BÖCKERS",
+      "club": "HSG SZOWW"
+    }
+  ],
+  "teams": {
+    "home": {
+      "name": "HSG EIDER HARDE",
+      "players": [
+        {
+          "number": 4,
+          "name": "Ellis Meg Bruhn",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 5,
+          "name": "Fina Walluks",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 7,
+          "name": "Hanne Schildhauer",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 8,
+          "name": "Sarah Theede",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 9,
+          "name": "Carina Wulff",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 10,
+          "name": "Marla Fee Göttsch",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 12,
+          "name": "Gesine Ohm",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 13,
+          "name": "Lena Hewig",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 14,
+          "name": "Frederike Hagge",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 16,
+          "name": "Nele Frahm",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 17,
+          "name": "Mia Sachse",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 18,
+          "name": "Johanna Minna Somann",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 20,
+          "name": "Maja Zwanziger",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 24,
+          "name": "Margit Rohwer",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 25,
+          "name": "Lena Ostermann",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 28,
+          "name": "Nadine Mentzer",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        }
+      ],
+      "officials": [
+        {
+          "role": "A",
+          "name": "Finn Geske",
+          "penalties": []
+        },
+        {
+          "role": "B",
+          "name": "Christian Hungerecker",
+          "penalties": []
+        },
+        {
+          "role": "C",
+          "name": "Andreas Wilhelm",
+          "penalties": []
+        },
+        {
+          "role": "D",
+          "name": "Katja Ohm",
+          "penalties": []
+        },
+        {
+          "role": "E",
+          "name": "Julia Jasmin Heide",
+          "penalties": []
+        }
+      ]
+    },
+    "away": {
+      "name": "TUS 97 BIELEFELD/JÖLLENBECK",
+      "players": [],
+      "officials": []
+    }
+  },
+  "timeline": [],
+  "parse_info": {
+    "complete": false,
+    "timeline_ok": false,
+    "roster_ok": true,
+    "warnings": [
+      "Spielverlauf leer",
+      "Kein Endstand im Spielbericht (Spiel evtl. nicht abgeschlossen)"
+    ],
+    "notes": [],
+    "pages": 3,
+    "events": 0,
+    "parsed_at": "2026-11-08T19:20:22"
+  }
+}
