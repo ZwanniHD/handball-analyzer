@@ -34,12 +34,12 @@
     },
     {
       "role": "ZEITNEHMER/SEKRETÄR",
-      "name": "JENS HUMKE",
+      "name": "JENS OTTEN",
       "club": "H - VFL Oldenburg"
     },
     {
       "role": "ZEITNEHMER/SEKRETÄR",
-      "name": "JENS OTTEN",
+      "name": "JENS HUMKE",
       "club": "H - VFL Oldenburg"
     }
   ],
@@ -1223,6 +1223,6 @@
     "notes": [],
     "pages": 5,
     "events": 91,
-    "parsed_at": "2026-11-08T19:17:46"
+    "parsed_at": "2026-11-16T16:26:52"
   }
 }

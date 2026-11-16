@@ -46,8 +46,195 @@
     },
     "away": {
       "name": "HSG EIDER HARDE",
-      "players": [],
-      "officials": []
+      "players": [
+        {
+          "number": 2,
+          "name": "Fine Petersen",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 4,
+          "name": "Ellis Meg Bruhn",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 7,
+          "name": "Hanne Schildhauer",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 8,
+          "name": "Sarah Theede",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 9,
+          "name": "Carina Wulff",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 10,
+          "name": "Marla Fee Göttsch",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 12,
+          "name": "Gesine Ohm",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 13,
+          "name": "Lena Hewig",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 14,
+          "name": "Frederike Hagge",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 16,
+          "name": "Nele Frahm",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 17,
+          "name": "Mia Sachse",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 18,
+          "name": "Johanna Minna Somann",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 20,
+          "name": "Maja Zwanziger",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 23,
+          "name": "Fina Walluks",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 24,
+          "name": "Margit Rohwer",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        },
+        {
+          "number": 28,
+          "name": "Nadine Mentzer",
+          "goals": 0,
+          "seven_m": null,
+          "penalties": [],
+          "warnings": [],
+          "two_minutes": [],
+          "disqualifications": []
+        }
+      ],
+      "officials": [
+        {
+          "role": "A",
+          "name": "Finn Geske",
+          "penalties": []
+        },
+        {
+          "role": "B",
+          "name": "Christian Hungerecker",
+          "penalties": []
+        },
+        {
+          "role": "C",
+          "name": "Andreas Wilhelm",
+          "penalties": []
+        },
+        {
+          "role": "D",
+          "name": "Katja Ohm",
+          "penalties": []
+        },
+        {
+          "role": "E",
+          "name": "Mehmet Ali Ataman",
+          "penalties": []
+        }
+      ]
     }
   },
   "timeline": [],
@@ -62,6 +249,6 @@
     "notes": [],
     "pages": 3,
     "events": 0,
-    "parsed_at": "2026-11-08T19:20:29"
+    "parsed_at": "2026-11-16T16:29:32"
   }
 }

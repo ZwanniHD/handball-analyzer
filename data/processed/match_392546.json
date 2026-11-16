@@ -142,8 +142,8 @@
           "goals": 10,
           "seven_m": "2/2",
           "penalties": [
-            "09:43",
             "09:43 Uhr",
+            "09:43",
             "30:48",
             "50:05"
           ],
@@ -161,8 +161,8 @@
           "goals": 1,
           "seven_m": null,
           "penalties": [
-            "27:16 Uhr",
-            "27:16"
+            "27:16",
+            "27:16 Uhr"
           ],
           "warnings": [],
           "two_minutes": [
@@ -273,8 +273,8 @@
           "goals": 0,
           "seven_m": null,
           "penalties": [
-            "06:21",
-            "06:21 Uhr"
+            "06:21 Uhr",
+            "06:21"
           ],
           "warnings": [],
           "two_minutes": [
@@ -318,8 +318,8 @@
           "goals": 2,
           "seven_m": "2/3",
           "penalties": [
-            "17:47",
-            "17:47 Uhr"
+            "17:47 Uhr",
+            "17:47"
           ],
           "warnings": [],
           "two_minutes": [
@@ -1193,6 +1193,6 @@
     "notes": [],
     "pages": 5,
     "events": 89,
-    "parsed_at": "2026-11-08T19:19:23"
+    "parsed_at": "2026-11-16T16:28:20"
   }
 }

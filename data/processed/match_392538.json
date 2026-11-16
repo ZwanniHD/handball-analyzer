@@ -88,8 +88,8 @@
           "goals": 1,
           "seven_m": null,
           "penalties": [
-            "12:37 Uhr",
             "12:37",
+            "12:37 Uhr",
             "43:02"
           ],
           "warnings": [],
@@ -165,8 +165,8 @@
           "goals": 3,
           "seven_m": null,
           "penalties": [
-            "27:34 Uhr",
-            "27:34"
+            "27:34",
+            "27:34 Uhr"
           ],
           "warnings": [],
           "two_minutes": [
@@ -273,8 +273,8 @@
           "goals": 4,
           "seven_m": null,
           "penalties": [
-            "18:55",
             "18:55 Uhr",
+            "18:55",
             "55:35"
           ],
           "warnings": [],
@@ -1196,6 +1196,6 @@
     "notes": [],
     "pages": 4,
     "events": 85,
-    "parsed_at": "2026-11-08T19:18:56"
+    "parsed_at": "2026-11-16T16:27:55"
   }
 }

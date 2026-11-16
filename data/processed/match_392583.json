@@ -28,6 +28,11 @@
   ],
   "match_officials": [
     {
+      "role": "SR-BEOBACHTER",
+      "name": "UWE REICHENBACH",
+      "club": ""
+    },
+    {
       "role": "ZEITNEHMER/SEKRETÄR",
       "name": "DANIEL MUTH",
       "club": "SV Cappeln"
@@ -62,6 +67,6 @@
     "notes": [],
     "pages": 3,
     "events": 0,
-    "parsed_at": "2026-11-08T19:20:46"
+    "parsed_at": "2026-11-16T16:29:44"
   }
 }

@@ -14,8 +14,30 @@
     "spectators": 0,
     "match_id": "392571"
   },
-  "referees": [],
-  "match_officials": [],
+  "referees": [
+    {
+      "role": "SR A",
+      "name": "DENNIS SCHAAF",
+      "club": "SV Eilendorf"
+    },
+    {
+      "role": "SR B",
+      "name": "JÉRÔME BREUER",
+      "club": "SV Eilendorf"
+    }
+  ],
+  "match_officials": [
+    {
+      "role": "ZEITNEHMER/SEKRETÄR",
+      "name": "ANDREAS MARQUARDT",
+      "club": "TV Billstedt"
+    },
+    {
+      "role": "ZEITNEHMER/SEKRETÄR",
+      "name": "BERND KÜHL",
+      "club": "HT 16 Hamburg"
+    }
+  ],
   "teams": {
     "home": {
       "name": "BUXTEHUDER SV II",
@@ -40,6 +62,6 @@
     "notes": [],
     "pages": 3,
     "events": 0,
-    "parsed_at": "2026-11-08T19:20:37"
+    "parsed_at": "2026-11-16T16:29:36"
   }
 }
